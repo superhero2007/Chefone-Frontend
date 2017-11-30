@@ -1,0 +1,45 @@
+@import (reference) '../../../../styles/variables';
+@import (reference) '../../../../styles/colors';
+
+.component {
+  &.disabled {
+    background-color: @gray-dark;
+  }
+  width: 100%;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #c2b935;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+
+  & > span {
+    display: block;
+    float: left;
+    line-height: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    height: 50px;
+  }
+}
+
+.full {
+  width: 100% !important;
+}
+
+.price-button-text {
+  width: 70%;
+  background-color: #b6a809;
+  &.disabled {
+    background-color: @gray;
+  }
+}
+
+span.priceText {
+  width: 30%;
+}

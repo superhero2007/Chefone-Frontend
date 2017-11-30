@@ -1,0 +1,177 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+@import (reference) '../../../../styles/z-index';
+
+.waiting-list-modal {
+  overflow: auto;
+}
+
+.sticky-header-container-wrapper {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: @z-index-sticky-header;
+}
+
+:global(.container.sticky) {
+  position: fixed;
+  width: 100%;
+  z-index: @z-index-sticky-header;
+  background-color: white;
+  top: 0;
+  padding: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header-container-wrapper {
+  position: relative;
+}
+
+.header-container {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  .event-name {
+    @media (max-width: @screen-sm) {
+      font-size: 20px;
+    }
+  }
+
+  .header-icons-container {
+    @media (max-width: @screen-sm) {
+      padding: 20px;
+    }
+  }
+
+  .container {
+    padding-bottom: 0;
+    padding-top: 30px;
+    background-color: white;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 49px;
+    color: #555555;
+    margin-top: 20px;
+  }
+  .header-info {
+    margin: auto;
+    border-top: none;
+    min-height: 90px;
+    .icon-info {
+      display: block;
+      width: 486px;
+      margin: auto;
+
+      @media (max-width: @screen-lg) {
+        width: 284px;
+      }
+    }
+  }
+}
+
+.info-item {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 110px;
+  text-align: center;
+
+  @media (max-width: @screen-lg) {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(2n) {
+    @media (max-width: @screen-lg) {
+      margin-right: 0px;
+    }
+  }
+  &:nth-child(2n + 1) {
+    @media (max-width: @screen-lg) {
+      margin-left: 0px;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .info-icon {
+    background-repeat: no-repeat;
+    background-size: 89%;
+    background-position: 50%;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+  }
+  .info-text {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #555555;
+    margin-right: 3px;
+  }
+
+  .question {
+    display: inline-block;
+    background-image: url('../../../../static/icons/event-page/questionmark.svg');
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 2px;
+    position: relative;
+  }
+}
+
+.dropdown-container {
+  width: 200px;
+  // display: inline-block;
+  float: left;
+
+  @media (max-width: 1210px) {
+    width: 274px;
+  }
+
+  @media (max-width: @screen-lg) {
+    width: 100%;
+  }
+
+  a {
+    color: #555555;
+  }
+}
+
+.price-container {
+  float: left;
+
+  @media (max-width: 1210px) {
+    width: 274px;
+  }
+  @media (max-width: @screen-lg) {
+    width: 100%;
+  }
+}
+
+.hide-sm {
+  @media (max-width: @screen-md) {
+    display: none !important;
+  }
+}
+
+.request-private-dinner-text {
+  a {
+    cursor: pointer;
+  }
+  height: 18px;
+  text-align: right;
+  margin-bottom: 10px;
+  color: #ce5118;
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 18px;
+}

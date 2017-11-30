@@ -1,0 +1,44 @@
+@import (reference) '../../../styles/variables.less';
+
+.map-label {
+  position: absolute;
+  background-image: url('../../../static/icons/map.svg');
+  background-repeat: no-repeat;
+
+  width: 24px;
+  background-size: contain;
+  height: 43px;
+  margin: auto;
+  top: 62px;
+  left: 0;
+  right: 0;
+
+  @media (min-width: @screen-sm) {
+    width: 34px;
+    height: 49px;
+    top: 75px;
+  }
+}
+
+.text-with-bg-container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 70%;
+  padding: 19px 0;
+
+  @media (min-width: @screen-sm) {
+    padding: 50px 0;
+  }
+
+  h2 {
+    color: white;
+    font-size: 60px;
+    margin: 0 auto;
+
+    @media (max-width: @screen-sm) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}

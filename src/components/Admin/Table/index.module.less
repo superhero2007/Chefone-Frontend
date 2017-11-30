@@ -1,0 +1,40 @@
+@import (reference) '../../../../styles/colors.less';
+
+.table {
+  color: @BRAND_GRAY_BG;
+  font-size: 12px;
+  background-color: white;
+}
+
+.table-column {
+  text-align: center !important;
+  color: @BRAND_GRAY !important;
+  padding-top: 28px !important;
+  padding-bottom: 25px !important;
+  span {
+    font-family: Montserrat-Regular;
+  }
+}
+
+:global(.react-bs-container-body) {
+  border-top: solid 1px #979797 !important;
+  border-bottom: none !important;
+}
+
+:global(.react-bs-table) {
+  border-radius: 0 !important;
+  border: none !important;
+  margin: auto !important;
+}
+
+:global(.react-bs-table .react-bs-container-body .table tbody) {
+  td,
+  tr {
+    text-align: center !important;
+    font-size: 14px;
+    color: #555555;
+    font-family: Montserrat-Light;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}

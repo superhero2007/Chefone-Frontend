@@ -1,0 +1,36 @@
+@import (reference) '../../../../styles/colors.less';
+@import (reference) '../Share/index.module.less';
+@import (reference) '../../UIKit/Button/index.module.less';
+
+.image-cropper {
+  margin-top: 27px;
+  margin-bottom: 20px;
+}
+
+.preview {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-size: cover;
+}
+
+.profile-oval {
+  cursor: pointer;
+  margin-top: 27.5px;
+  background-image: url('../../../../static/icons/profile_oval.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.outlined (@color: currentColor) {
+  border: 1.3px solid @color;
+}
+
+.filled (@color) {
+  background-color: @color;
+}
+.row + .row {
+  margin-top: 20px;
+}

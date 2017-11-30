@@ -1,0 +1,259 @@
+@import (reference) './../../../styles/variables';
+@import (reference) './../../../styles/colors';
+@import (reference) '../../../styles/z-index.less';
+
+.event-col-elem {
+  margin: auto;
+  flex: 1;
+}
+
+.events-col-blocks {
+  display: block;
+}
+
+.soldout-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    opacity: 0.5;
+    background-color: white;
+    width: 100%;
+  }
+
+  &__text {
+    position: relative;
+    margin-top: 33%;
+    color: @brand-primary;
+    font-size: 28px;
+    text-transform: uppercase;
+    z-index: @z-index-sold-out-overlay + 1;
+  }
+}
+
+.card-bottom {
+  text-align: left;
+}
+
+.city-text {
+  margin-bottom: 5px;
+  height: 20px;
+}
+
+.price-and-reviews {
+  height: 20px;
+  margin-bottom: 11px;
+}
+
+.card {
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  .seats-left {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    min-width: 100px;
+    width: 130px;
+    height: 35px;
+    background-color: @brand-primary;
+    font-family: Montserrat-Light;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 19px;
+    color: white;
+    padding: 8px;
+    opacity: 0.9;
+  }
+
+  .price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 100px;
+
+    .price-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: black;
+      opacity: 0.5;
+      z-index: 1;
+    }
+
+    .price-text {
+      position: relative;
+      text-align: center;
+      font-size: 30px;
+      font-family: Montserrat-Light;
+      color: white;
+      z-index: 2;
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: right;
+        line-height: 24px;
+        color: #ffffff;
+        padding: 10px;
+        display: block;
+        height: 42px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.author-info {
+  display: block;
+  height: 60px;
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+
+  img {
+    float: left;
+    margin: 7px 10px 7px 20px;
+  }
+
+  .author-details {
+    float: left;
+    overflow: hidden;
+
+    .author-name {
+      float: left;
+      color: #666;
+      margin-bottom: 0;
+      margin-top: 17px;
+    }
+    .author-rating {
+      float: left;
+      clear: both;
+
+      .fa-star-gray {
+        background: @brand-gray;
+      }
+    }
+  }
+  .action-buttons {
+    float: right;
+    overflow: hidden;
+    margin: 19px;
+
+    button {
+      display: inline-block;
+      border: none;
+      background: transparent;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+    }
+    .house {
+      background-image: url('../../../static/icons/house.svg');
+    }
+    .veggi {
+      background-image: url('../../../static/icons/nature.svg');
+    }
+  }
+}
+
+.event-info {
+  background: white;
+  padding: 20px;
+  font-family: Montserrat-Light;
+
+  .event-date {
+    .month {
+      color: @brand-primary;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 20px;
+    }
+    .day {
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      line-height: 21px;
+      color: @text-color;
+    }
+  }
+  .event-details {
+    text-align: left;
+    color: #666;
+    margin-left: -20px;
+    padding-left: 30px;
+
+    .title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 18px;
+      line-height: 18px;
+      color: @text-color;
+    }
+    .time-and-city {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 17px;
+      color: @text-color;
+      margin-bottom: 5px;
+
+      span {
+        white-space: nowrap;
+      }
+    }
+    .people-amount {
+      min-height: 28px;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 14px;
+      color: #7f7f7f;
+    }
+  }
+}
+
+.reviews {
+  &-text {
+    width: 65%;
+  }
+  &-avatar {
+    position: absolute;
+    right: 5px;
+    top: -40px;
+    background: gray;
+    max-width: 12rem;
+  }
+
+  h6 {
+    font-weight: bold;
+  }
+
+  .name,
+  .date {
+    margin: 15px 0;
+    color: @brand-primary;
+  }
+}

@@ -1,0 +1,52 @@
+@import (reference) '../../../../styles/variables';
+
+.component {
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: #ce5100;
+  color: #ffffff;
+
+  h2 {
+    margin-top: 70px;
+    font-size: 46px;
+    font-family: Montserrat-Light;
+    @media (max-width: @screen-sm) {
+      margin-top: 40px;
+      font-size: 26px;
+    }
+  }
+
+  p.description {
+    font-family: Montserrat-Light;
+    color: white;
+    font-size: 20px;
+    @media (max-width: @screen-sm) {
+      font-size: 14px;
+    }
+  }
+
+  p.slogan {
+    text-align: center;
+    color: white;
+    font-family: IndieFlower;
+    font-size: 40px;
+    @media (max-width: @screen-sm) {
+      text-align: left;
+      font-size: 20px;
+    }
+  }
+
+  .money_icon_wrapper {
+    position: relative;
+  }
+
+  .money_icon {
+    position: absolute;
+    right: 0;
+    margin-top: 35px;
+    background-image: url('../../../../static/icons/money_white.svg');
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,202 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+@bright: #ffffff;
+@gray: #7f7f7f;
+@pad: 30px;
+
+@fontColor: #555555;
+@placeholderColor: #7f7f7f;
+
+@screen-md-plus: 820px;
+
+.font(@size: 16px) {
+  font-family: Montserrat-Light;
+  font-size: @size;
+}
+
+.fill(@color, @text: @bright) {
+  color: @text;
+  background-color: @color;
+  border-color: transparent;
+}
+
+.input {
+  .font();
+  padding: 15px !important;
+
+  input&,
+  select& {
+    height: 50px;
+  }
+}
+
+.button {
+  .font();
+
+  height: 50px;
+  padding: 16px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 19px;
+  user-select: none;
+  border-color: currentColor;
+
+  &-pressed {
+    color: @brand-primary !important;
+  }
+
+  margin-bottom: 20px;
+}
+
+.social-glyph {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: @fontColor;
+  margin-right: 9.5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.messenger-glyph {
+  .social-glyph;
+  background-image: url('../../../../static/icons/combined_shape.svg');
+}
+
+.facebook-glyph {
+  .social-glyph;
+  background-image: url('../../../../static/icons/facebook.svg');
+}
+
+.twitter-glyph {
+  .social-glyph;
+  background-image: url('../../../../static/icons/twitter.svg');
+}
+
+.social-button {
+  .button;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+  border-radius: 3px;
+  padding: 0;
+}
+
+.centered-content {
+  margin-top: 11px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.messenger-button {
+  .social-button;
+  .fill(#0084ff);
+
+  &-pressed {
+    color: @brand-primary !important;
+  }
+}
+
+.facebook-button {
+  .social-button;
+  .fill(#3b5998);
+
+  &-pressed {
+    color: @brand-primary !important;
+  }
+}
+
+.twitter-button {
+  .social-button;
+  .fill(#65bbf2);
+
+  &-pressed {
+    color: @brand-primary !important;
+  }
+}
+
+.email-field {
+  resize: none !important;
+
+  height: 50px !important;
+  line-height: 48px;
+  padding: 15px 15px !important;
+  color: @fontColor;
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  overflow: hidden;
+
+  &::placeholder {
+    color: @placeholderColor;
+  }
+
+  margin-bottom: 20px;
+}
+
+.send-invite {
+  .fill(@brand-primary);
+  width: 100%;
+}
+
+.copy-link-button {
+  .fill(@brand-primary);
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  @media (max-width: @screen-lg) {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+.send-invite-section {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  font-family: @main-font-family;
+  padding: 50px 40px;
+
+  @media (max-width: 480px) {
+    border-radius: 0px !important;
+  }
+
+  @media (max-width: @screen-lg) {
+    padding: 40px 30px;
+  }
+
+  .invites-section-header {
+    height: 22px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    color: @fontColor;
+    margin-top: 26px;
+    margin-bottom: 19px;
+  }
+}
+
+.divider-block {
+  width: 100%;
+  margin-top: 50px;
+  @media (max-width: @screen-lg) {
+    margin-top: 51px;
+  }
+}
+
+.or-divider {
+  padding: 0 7px;
+}
+
+.divider {
+  height: 1px;
+  background: #c6c6c6;
+}

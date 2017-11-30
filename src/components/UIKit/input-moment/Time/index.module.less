@@ -1,0 +1,84 @@
+@import (reference) '../less/variables.module.less';
+@import (reference) '../../../../../styles/colors.less';
+
+.m-time {
+  color: @color-white;
+  padding-top: 50px;
+
+  .showtime {
+    text-align: center;
+  }
+
+  .separater {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    color: @brand-primary;
+    width: 32px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+  }
+
+  .time-text {
+    position: relative;
+    left: -10px;
+    font-size: 15px;
+    color: @brand-primary;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+
+  .sliders {
+    padding: 0 10px;
+  }
+
+  .time {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    font-size: 38px;
+    line-height: 65px;
+    background-color: @brand-primary;
+    border-radius: 3px;
+    text-align: center;
+  }
+}
+
+.u-slider-time {
+  position: relative;
+  display: inline-block;
+  background-color: @color-gray;
+  border-radius: 3px;
+  height: @slider-size;
+  width: 100%;
+  cursor: pointer;
+
+  :global(.value) {
+    position: absolute;
+    background-color: @brand-primary;
+    border-radius: 3px;
+    top: 0;
+    height: 100%;
+  }
+
+  :global(.handle) {
+    position: absolute;
+    width: @slider-size;
+    height: @slider-size;
+
+    &:after {
+      position: relative;
+      display: block;
+      content: '';
+      top: -@slider-fix/2;
+      left: -(@slider-size+@slider-fix)/2;
+      width: @slider-size + @slider-fix;
+      height: @slider-size + @slider-fix;
+      background-color: #fff;
+      border: 3px solid @brand-primary;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}

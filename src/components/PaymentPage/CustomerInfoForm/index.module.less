@@ -1,0 +1,57 @@
+.font {
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  color: #555555;
+}
+
+.component {
+  .font;
+  label {
+    .font;
+  }
+
+  textarea {
+    border-color: #b2b2b2;
+    border-radius: 3px;
+    height: 80px;
+    width: 100%;
+  }
+
+  textarea::placeholder {
+    text-align: left;
+    opacity: 0.3;
+    font-size: 14px;
+    line-height: 17px;
+    color: #555555;
+  }
+
+  line-height: 21px;
+  .phone {
+    :global(.react-tel-input input) {
+      height: 49px;
+      border-color: #b2b2b2;
+    }
+    :global(.flag-dropdown) {
+      border-color: #b2b2b2;
+    }
+    margin-top: 40px;
+  }
+}
+.chef-message {
+  margin-top: 30px;
+}
+.body {
+  margin-top: 15px;
+}
+
+.order-phone {
+  background-color: transparent;
+}
+
+.tel-input {
+  background-color: transparent;
+}
+
+.error {
+  background-color: transparent;
+}

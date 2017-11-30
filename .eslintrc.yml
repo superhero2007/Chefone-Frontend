@@ -1,0 +1,49 @@
+env:
+  browser: true
+  commonjs: true
+  es6: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:react/recommended'
+parserOptions:
+  ecmaFeatures:
+    experimentalObjectRestSpread: true
+    jsx: true
+  sourceType: module
+parser: 'babel-eslint'
+plugins:
+  - react
+rules:
+  'react/prop-types': 'off'
+  'react/no-danger': 'off'
+  'no-extra-boolean-cast': 'off'
+  "react/display-name": 'off'
+  'react/no-did-mount-set-state': 'off'
+  "no-console":
+    - off
+
+settings:
+  flowtype:
+    onlyFilesWithFlowAnnotation: true
+globals:
+  React$ComponentType: true
+  moment$Moment: true
+  FB: true
+  ga: true
+  fbq: true
+  __SERVER__: true
+  __DEVELOPMENT__: true
+  webpackIsomorphicTools: true
+  Parse: true
+  $Enum: true
+  ReactClass: true
+  React$Element: true
+  React$Component: true
+  Raven: true
+  CssOptions: true
+  $Keys: true
+  Component$: true
+  __dirname: true
+  __CLIENT__: true
+  CONFIG: true
+  process: true

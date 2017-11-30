@@ -1,0 +1,90 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.container {
+  padding: 0 0 40px 0;
+
+  h1 {
+    color: @brand-gray;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 30px;
+  }
+
+  h4 {
+    color: @brand-primary;
+    font-size: 14px;
+    margin: 30px;
+  }
+
+  .left-block {
+    box-shadow: 0 0 10px #666666;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    @media (min-width: @screen-md) {
+      height: 450px;
+    }
+    @media (max-width: @screen-md) {
+      margin: 10px;
+    }
+  }
+
+  .right-block {
+    box-shadow: 0 0 10px #666666;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    @media (min-width: @screen-md) {
+      height: 450px;
+    }
+
+    @media (max-width: @screen-md) {
+      margin: 10px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  input[type='text'],
+  input,
+  textarea,
+  select {
+    border: 1px solid #666;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: @brand-gray;
+  }
+
+  input {
+    line-height: 25px;
+    font-size: 18px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  select {
+    appearance: none;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 20px;
+    outline: none;
+    line-height: 25px;
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: white;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAKCAMAAACdQr5nAAAAPFBMVEXn6+P3+/L3+/L0+O/3+/L3+/L3+/L3+/L3+/L3+/L3+/L3+/L0+O/n6+Pq7eX3+/IAAAD2+vHz9+73+/KWthK3AAAAEXRSTlP0MXqqRZEIkAlEMnmr8+IRAJig9poAAABYSURBVHjadY5JDoAwDAMLdF+T+v9/hYIqFFDnFHtysKIlio72ppaFQgkzhAKpwM6O0zqGVHsHaiTaKtCTUBTvLj0fUpE3jAs2nqQa6AIo/R0/V+dGP7XkBDn1D5sPSFgFAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}

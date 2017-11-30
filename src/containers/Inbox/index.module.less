@@ -1,0 +1,40 @@
+@import (reference) '../../../styles/colors.less';
+@import (reference) '../../../styles/variables.less';
+
+.messages-container {
+  background-color: @wild_sand;
+}
+
+.header {
+  color: #898c88;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.messages-page {
+  width: 100%;
+  font-family: Montserrat, serif;
+  background-color: white;
+  //border-top: 1px solid #898C88;
+
+  .messages-container {
+    padding-bottom: 20px;
+
+    .header {
+      margin: 25px auto;
+      text-align: center;
+
+      .title {
+        color: #898c88;
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+    }
+
+    .new {
+      color: #b9582d;
+    }
+  }
+}

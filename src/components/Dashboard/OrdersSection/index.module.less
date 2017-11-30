@@ -1,0 +1,168 @@
+@import (reference) './../../../../styles/variables';
+@import (reference) './../../../../styles/colors';
+@import (reference) '../../../../styles/z-index';
+
+.events-col-blocks {
+  display: block;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.card {
+  margin-right: auto;
+  display: block;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+  font-family: @main-font-family;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media (max-width: @screen-sm) {
+    margin-bottom: 2rem;
+  }
+}
+
+.image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background-size: 100%;
+  background-position: 50%;
+
+  @media (max-width: @screen-lg) {
+    height: 220px;
+  }
+}
+
+.author-info {
+  display: block;
+  height: 60px;
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+
+  img {
+    float: left;
+    margin: 7px 10px 7px 20px;
+  }
+
+  .author-details {
+    float: left;
+    overflow: hidden;
+
+    .author-name,
+    .city {
+      font-family: @main-font-family;
+      display: block;
+      color: #666;
+      margin-bottom: 0;
+      opacity: 0.9;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px;
+    }
+
+    .author-name {
+      margin-top: 14px;
+      color: #555555;
+    }
+
+    .city {
+      margin-top: 0px;
+      color: #7f7f7f;
+    }
+  }
+}
+
+.event-info {
+  background: white;
+  padding: 20px;
+  font-family: @main-font-family;
+
+  .event-date {
+    .month {
+      color: @brand-primary;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 300;
+      line-height: 20px;
+    }
+    .day {
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      line-height: 21px;
+      color: #555555;
+    }
+  }
+  .event-details {
+    text-align: left;
+    color: #666;
+    height: 65px;
+
+    .title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      color: @text-color;
+    }
+    .time-and-date {
+      overflow: hidden;
+
+      .calendar-icon {
+        float: left;
+        width: 20px;
+        height: 17px;
+        background-image: url(../../../../static/icons/calendar_orange.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+      }
+
+      .date {
+        float: left;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 15px;
+        color: @text-color;
+        margin-right: 10px;
+      }
+
+      .time {
+        float: left;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 15px;
+        color: #7f7f7f;
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    border-top: 1px solid #cacaca;
+  }
+
+  .event-link {
+    display: block;
+    width: 130px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    color: @brand-primary;
+    text-align: center;
+  }
+}

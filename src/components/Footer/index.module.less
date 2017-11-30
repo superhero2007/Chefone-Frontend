@@ -1,0 +1,101 @@
+@import (reference) '../../../styles/variables';
+
+.copyright {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+footer {
+  background-color: #ededed;
+  padding-top: 60px;
+
+  hr {
+    box-sizing: border-box;
+    height: 2px;
+    border: 1px solid #cacaca;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-family: Montserrat-Light;
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+  }
+
+  div a {
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    line-height: 33px;
+    color: #7f7f7f;
+    display: block;
+    margin: 0.2rem 0;
+  }
+
+  .become-chef-btn {
+    width: auto;
+  }
+
+  .locale-block {
+    @media (max-width: @screen-md) {
+      margin-top: 10px;
+    }
+
+    button {
+      @media (max-width: @screen-sm) {
+        font-size: 10px;
+      }
+    }
+
+    select {
+      @media (max-width: @screen-md) {
+        margin-right: 20px;
+      }
+      @media (max-width: @screen-sm) {
+        margin-right: 3px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.social_icons {
+  width: 100%;
+  display: flex;
+  max-width: 200px;
+  justify-content: space-between;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.button-google-play,
+.button-app-store {
+  background-color: black;
+  width: 161px;
+  height: 50px;
+  margin: 10px 12px 0px 10px;
+  border-radius: 5px;
+}
+
+.btn.button-google-play {
+  background-image: url('../../../static/button-google-play.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.btn.button-app-store {
+  background-image: url('../../../static/button-app-store.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.button-app-store,
+.button-google-play {
+  margin-left: 0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.9rem;
+}

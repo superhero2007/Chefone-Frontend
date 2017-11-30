@@ -1,0 +1,86 @@
+.left-fadein-enter {
+  transform: translate(-100%);
+  opacity: 0.01;
+}
+.left-fadein-enter.left-fadein-enter-active {
+  transform: translate(0%);
+  opacity: 1;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+.left-fadein-leave {
+  opacity: 1;
+  transform: translate(0%);
+}
+.left-fadein-leave.left-fadein-leave-active {
+  transform: translate(-100%);
+  opacity: 0.01;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.right-fadein-enter {
+  transform: translate(100%);
+  opacity: 0.01;
+}
+.right-fadein-enter.right-fadein-enter-active {
+  transform: translate(0%);
+  opacity: 1;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+.right-fadein-leave {
+  opacity: 1;
+  transform: translate(0%);
+}
+.right-fadein-leave.right-fadein-leave-active {
+  transform: translate(100%);
+  opacity: 0.01;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.anim-fadein-enter {
+  opacity: 0.0005;
+}
+.anim-fadein-enter.anim-fadein-enter-active {
+  opacity: 0.5;
+  transition: opacity 500ms linear;
+}
+.anim-fadein-leave {
+  opacity: 0.5;
+}
+.anim-fadein-leave.anim-fadein-leave-active {
+  opacity: 0.0005;
+  transition: opacity 500ms linear;
+}
+
+.anim-top-enter {
+  transform: translate(0, -120%);
+}
+.anim-top-enter.anim-top-enter-active {
+  transform: translate(0%);
+  transition: transform 500ms ease-in-out;
+}
+.anim-top-leave {
+  transform: translate(0%);
+}
+.anim-top-leave.anim-top-leave-active {
+  transform: translate(0, -120%);
+  transition: transform 500ms ease-in-out;
+}
+
+.top-fadein-enter {
+  transform: translate(0, -100%);
+  opacity: 0.01;
+}
+.top-fadein-enter.top-fadein-enter-active {
+  transform: translate(0%);
+  opacity: 1;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+.top-fadein-leave {
+  opacity: 1;
+  transform: translate(0%);
+}
+.top-fadein-leave.top-fadein-leave-active {
+  transform: translate(0, -100%);
+  opacity: 0.01;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}

@@ -1,0 +1,1751 @@
+{
+    "results": [
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Address",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "city": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "street": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "zipcode": {
+                    "type": "Number"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Backend",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "lastTimeSent": {
+                    "type": "Date"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "service": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Chef",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "kitchen1": {
+                    "type": "File"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "numberOfReviews": {
+                    "type": "Number"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "rating": {
+                    "type": "Number"
+                },
+                "rating_average": {
+                    "type": "Number"
+                },
+                "rating_last_User": {
+                    "type": "String"
+                },
+                "rating_last_comment": {
+                    "type": "String"
+                },
+                "rating_total": {
+                    "type": "Number"
+                },
+                "reviewsAvg": {
+                    "type": "Number"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Cities",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "city": {
+                    "type": "String"
+                },
+                "city_image": {
+                    "type": "File"
+                },
+                "city_image_web": {
+                    "type": "File"
+                },
+                "country": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "location": {
+                    "type": "GeoPoint"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Crono",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "enableReviews": {
+                    "type": "Boolean"
+                },
+                "lastTimeSent": {
+                    "type": "Date"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Currencies",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "currency_number": {
+                    "type": "Number"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "symbol": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "DataErrorReport",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "affectedClass": {
+                    "type": "String"
+                },
+                "affectedID": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "message": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Discount",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "cash": {
+                    "type": "Number"
+                },
+                "code": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "currency": {
+                    "targetClass": "Currencies",
+                    "type": "Pointer"
+                },
+                "inviteType": {
+                    "type": "String"
+                },
+                "invitedUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "invitingUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "percentage": {
+                    "type": "Number"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "usageCount": {
+                    "type": "Number"
+                },
+                "usageExpire": {
+                    "type": "Date"
+                },
+                "usageMax": {
+                    "type": "Number"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Event",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "chef": {
+                    "targetClass": "Chef",
+                    "type": "Pointer"
+                },
+                "chefAvatar": {
+                    "type": "String"
+                },
+                "city": {
+                    "targetClass": "Cities",
+                    "type": "Pointer"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "currency": {
+                    "targetClass": "Currencies",
+                    "type": "Pointer"
+                },
+                "eventDeadline": {
+                    "type": "Date"
+                },
+                "eventStart": {
+                    "type": "Date"
+                },
+                "hasOrders": {
+                    "type": "Boolean"
+                },
+                "location": {
+                    "type": "GeoPoint"
+                },
+                "locationAddress": {
+                    "type": "String"
+                },
+                "locationDetails": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdFood": {
+                    "targetClass": "Food",
+                    "type": "Pointer"
+                },
+                "price": {
+                    "type": "Number"
+                },
+                "reviewMailSent": {
+                    "type": "Boolean"
+                },
+                "reviews": {
+                    "type": "Number"
+                },
+                "servings": {
+                    "type": "Number"
+                },
+                "servingsSold": {
+                    "type": "Number"
+                },
+                "slug": {
+                    "type": "String"
+                },
+                "soldOut": {
+                    "type": "Boolean"
+                },
+                "sticky": {
+                    "type": "Boolean"
+                },
+                "type": {
+                    "type": "Number"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "userActive": {
+                    "type": "Boolean"
+                },
+                "zip": {
+                    "type": "Number"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Fee",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "chef": {
+                    "type": "Number"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "customer": {
+                    "type": "Number"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Food",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "chef": {
+                    "targetClass": "Chef",
+                    "type": "Pointer"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "food_description": {
+                    "type": "String"
+                },
+                "food_description_vegan": {
+                    "type": "String"
+                },
+                "food_description_vegetarian": {
+                    "type": "String"
+                },
+                "image1": {
+                    "type": "File"
+                },
+                "image2": {
+                    "type": "File"
+                },
+                "image3": {
+                    "type": "File"
+                },
+                "meta_image": {
+                    "type": "File"
+                },
+                "nutrition": {
+                    "type": "Number"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "organic": {
+                    "type": "Boolean"
+                },
+                "title": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "InviteRequest",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "userMsg": {
+                    "type": "String"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Invoice",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "InvoiceDate": {
+                    "type": "Date"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "invoiceNumber": {
+                    "type": "String"
+                },
+                "invoicePDF": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdEvent": {
+                    "targetClass": "Event",
+                    "type": "Pointer"
+                },
+                "paymentSubmitted": {
+                    "type": "Boolean"
+                },
+                "payout": {
+                    "type": "Number"
+                },
+                "serviceFee": {
+                    "type": "Number"
+                },
+                "servingsSold": {
+                    "type": "Number"
+                },
+                "totalAmount": {
+                    "type": "Number"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "JobSection",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "department": {
+                    "type": "String"
+                },
+                "jobIcon": {
+                    "type": "File"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Jobs",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "jobDescription": {
+                    "type": "String"
+                },
+                "jobTitle": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdJobSection": {
+                    "targetClass": "JobSection",
+                    "type": "Pointer"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "MRO",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "maintenanceMode": {
+                    "type": "Boolean"
+                },
+                "minimumBuildVersion": {
+                    "type": "Number"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "platform": {
+                    "type": "String"
+                },
+                "systemMessage": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Messages",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "chef": {
+                    "targetClass": "Chef",
+                    "type": "Pointer"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "currency": {
+                    "targetClass": "Currencies",
+                    "type": "Pointer"
+                },
+                "isNew": {
+                    "type": "Boolean"
+                },
+                "msgSeen": {
+                    "type": "Boolean"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "order": {
+                    "targetClass": "Order",
+                    "type": "Pointer"
+                },
+                "price": {
+                    "type": "Number"
+                },
+                "textMessage": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "user": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Order",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "amount": {
+                    "type": "Number"
+                },
+                "approval": {
+                    "type": "Boolean"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "discountPrice": {
+                    "type": "Number"
+                },
+                "emailed": {
+                    "type": "Boolean"
+                },
+                "finalized": {
+                    "type": "Boolean"
+                },
+                "foodPrice": {
+                    "type": "Number"
+                },
+                "foodPriceTotal": {
+                    "type": "Number"
+                },
+                "msgSeen": {
+                    "type": "Boolean"
+                },
+                "nonce": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdDiscount": {
+                    "targetClass": "Discount",
+                    "type": "Pointer"
+                },
+                "objectIdEvent": {
+                    "targetClass": "Event",
+                    "type": "Pointer"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "phone": {
+                    "type": "Number"
+                },
+                "phoneStr": {
+                    "type": "String"
+                },
+                "refunded": {
+                    "type": "Boolean"
+                },
+                "remindEmailSent": {
+                    "type": "Boolean"
+                },
+                "review": {
+                    "targetClass": "Reviews",
+                    "type": "Pointer"
+                },
+                "reviewMailSent": {
+                    "type": "Boolean"
+                },
+                "reviewedByUser": {
+                    "type": "Boolean"
+                },
+                "serviceFee": {
+                    "type": "Number"
+                },
+                "serviceFeePercentage": {
+                    "type": "Number"
+                },
+                "status": {
+                    "type": "Number"
+                },
+                "systemMsg": {
+                    "type": "String"
+                },
+                "timestamp": {
+                    "type": "Number"
+                },
+                "touched": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "userMsg": {
+                    "type": "String"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Payment",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "app_ver": {
+                    "type": "String"
+                },
+                "create_time": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "currencyobjectId": {
+                    "targetClass": "Currencies",
+                    "type": "Pointer"
+                },
+                "description": {
+                    "type": "String"
+                },
+                "environment": {
+                    "type": "String"
+                },
+                "intent": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "orderobjectId": {
+                    "targetClass": "Order",
+                    "type": "Pointer"
+                },
+                "paypal": {
+                    "type": "String"
+                },
+                "platform": {
+                    "type": "String"
+                },
+                "preAprovalKey": {
+                    "type": "String"
+                },
+                "refunded": {
+                    "type": "Boolean"
+                },
+                "state": {
+                    "type": "String"
+                },
+                "totalAmount": {
+                    "type": "Number"
+                },
+                "touched": {
+                    "type": "String"
+                },
+                "transaction_id": {
+                    "type": "String"
+                },
+                "type": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "Reviews",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "chef": {
+                    "targetClass": "Chef",
+                    "type": "Pointer"
+                },
+                "company_review": {
+                    "type": "String"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdEvent": {
+                    "targetClass": "Event",
+                    "type": "Pointer"
+                },
+                "objectIdFood": {
+                    "targetClass": "Food",
+                    "type": "Pointer"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "order": {
+                    "targetClass": "Order",
+                    "type": "Pointer"
+                },
+                "rating": {
+                    "type": "Number"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "user_review": {
+                    "type": "String"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "_Installation",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "GCMSenderId": {
+                    "type": "String"
+                },
+                "admin": {
+                    "type": "Boolean"
+                },
+                "appIdentifier": {
+                    "type": "String"
+                },
+                "appName": {
+                    "type": "String"
+                },
+                "appVersion": {
+                    "type": "String"
+                },
+                "badge": {
+                    "type": "Number"
+                },
+                "channels": {
+                    "type": "Array"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "deviceToken": {
+                    "type": "String"
+                },
+                "deviceType": {
+                    "type": "String"
+                },
+                "installationId": {
+                    "type": "String"
+                },
+                "localeIdentifier": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "parseVersion": {
+                    "type": "String"
+                },
+                "pushType": {
+                    "type": "String"
+                },
+                "timeZone": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {},
+                "create": {},
+                "delete": {},
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {},
+                "writeUserFields": []
+            },
+            "className": "_Product",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "download": {
+                    "type": "File"
+                },
+                "downloadName": {
+                    "type": "String"
+                },
+                "icon": {
+                    "type": "File"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "order": {
+                    "type": "Number"
+                },
+                "productIdentifier": {
+                    "type": "String"
+                },
+                "subtitle": {
+                    "type": "String"
+                },
+                "title": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "_Role",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "name": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "roles": {
+                    "targetClass": "_Role",
+                    "type": "Relation"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "users": {
+                    "targetClass": "_User",
+                    "type": "Relation"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "_Session",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "createdWith": {
+                    "type": "Object"
+                },
+                "expiresAt": {
+                    "type": "Date"
+                },
+                "installationId": {
+                    "type": "String"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "restricted": {
+                    "type": "Boolean"
+                },
+                "sessionToken": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "user": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "readUserFields": [],
+                "update": {
+                    "*": true
+                },
+                "writeUserFields": []
+            },
+            "className": "_User",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "activationToken": {
+                    "type": "String"
+                },
+                "active": {
+                    "type": "Boolean"
+                },
+                "adminRole": {
+                    "type": "Boolean"
+                },
+                "authData": {
+                    "type": "Object"
+                },
+                "avatar": {
+                    "type": "File"
+                },
+                "bio": {
+                    "type": "String"
+                },
+                "birthday": {
+                    "type": "Date"
+                },
+                "city": {
+                    "targetClass": "Cities",
+                    "type": "Pointer"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "duplicate": {
+                    "type": "String"
+                },
+                "email": {
+                    "type": "String"
+                },
+                "emailConfirmed": {
+                    "type": "Boolean"
+                },
+                "emailVerified": {
+                    "type": "Boolean"
+                },
+                "fb_email": {
+                    "type": "String"
+                },
+                "firstName": {
+                    "type": "String"
+                },
+                "geoPoint": {
+                    "type": "GeoPoint"
+                },
+                "invitingUserId": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "isChef": {
+                    "type": "Boolean"
+                },
+                "lastName": {
+                    "type": "String"
+                },
+                "location": {
+                    "type": "String"
+                },
+                "nutrition": {
+                    "type": "Number"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "orderedAnything": {
+                    "type": "Boolean"
+                },
+                "password": {
+                    "type": "String"
+                },
+                "phone": {
+                    "type": "Number"
+                },
+                "syncedWithMailchimp": {
+                    "type": "Boolean"
+                },
+                "touched": {
+                    "type": "String"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "username": {
+                    "type": "String"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                }
+            },
+            "className": "FollowersList",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdChef": {
+                    "targetClass": "Chef",
+                    "type": "Pointer"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                }
+            }
+        },
+        {
+            "classLevelPermissions": {
+                "addField": {
+                    "*": true
+                },
+                "create": {
+                    "*": true
+                },
+                "delete": {
+                    "*": true
+                },
+                "find": {
+                    "*": true
+                },
+                "get": {
+                    "*": true
+                },
+                "update": {
+                    "*": true
+                }
+            },
+            "className": "PrivateDinnerRequest",
+            "fields": {
+                "ACL": {
+                    "type": "ACL"
+                },
+                "createdAt": {
+                    "type": "Date"
+                },
+                "finalPrice": {
+                    "type": "Number"
+                },
+                "guests": {
+                    "type": "Number"
+                },
+                "objectId": {
+                    "type": "String"
+                },
+                "objectIdEvent": {
+                    "targetClass": "Event",
+                    "type": "Pointer"
+                },
+                "objectIdUser": {
+                    "targetClass": "_User",
+                    "type": "Pointer"
+                },
+                "price": {
+                    "type": "Number"
+                },
+                "privateDinnerDate": {
+                    "type": "Date"
+                },
+                "updatedAt": {
+                    "type": "Date"
+                },
+                "userMessage": {
+                    "type": "String"
+                }
+            }
+        }
+    ]
+}

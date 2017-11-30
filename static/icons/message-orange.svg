@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="25px" viewBox="0 0 30 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>message-orange</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Admin-Interface-Event" transform="translate(-378.000000, -626.000000)" stroke="#CE5100" stroke-width="0.8">
+            <g id="Table" filter="url(#filter-1)" transform="translate(50.000000, 539.000000)">
+                <g id="Row" transform="translate(0.000000, 89.000000)">
+                    <g id="message-orange" transform="translate(333.000000, 1.000000)">
+                        <polygon id="Stroke-1" points="0.0433333333 0.385178571 19.9566667 0.385178571 19.9566667 14.6148214 0.0433333333 14.6148214"></polygon>
+                        <path d="M19.9566667,0.385178571 C10.3561111,0.385178571 5.955,12.0851786 10,12.0851786 C14.045,12.0851786 9.51166667,0.385178571 0.0433333333,0.385178571" id="Stroke-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

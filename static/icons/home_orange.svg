@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>house</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Front-Page---without-Account" transform="translate(-249.000000, -20.000000)" stroke="#CE5100">
+            <g id="NAVBAR">
+                <g id="house" transform="translate(250.000000, 20.500000)">
+                    <polygon id="Stroke-1" points="0.411891892 19.5248649 0.411891892 9.1027027 7.63297297 2.74486486 14.8540541 9.1027027 14.8540541 19.5248649"></polygon>
+                    <path d="M12.0437838,0.151891892 C12.0437838,3.26432432 15.7621622,4.51837838 15.7621622,3.30864865 C15.7621622,2.09675676 12.0437838,3.52432432 12.0437838,6.72486486" id="Stroke-2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polygon id="Stroke-3" points="5.34 13.167027 9.92378378 13.167027 9.92378378 19.4805405 5.34 19.4805405"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

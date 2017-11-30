@@ -1,0 +1,30 @@
+@import (reference) '../../../../styles/variables';
+
+.component {
+  position: fixed;
+  width: 101%;
+  height: 100%;
+  z-index: 9000;
+  top: 0;
+  background-color: white;
+}
+
+.form {
+  padding-left: 50px;
+  padding-right: 50px;
+  @media (min-width: @screen-sm) {
+    min-width: 500px;
+  }
+}
+
+.image-col {
+}
+
+.image {
+  background-image: url('../../../../static/chef-image.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  height: 240px;
+}

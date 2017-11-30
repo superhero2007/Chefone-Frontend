@@ -1,0 +1,85 @@
+.component {
+  form {
+  }
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  padding: 30px;
+  color: #555555;
+
+  .cardholder {
+    text-transform: uppercase;
+  }
+
+  input {
+    padding: 0 15px;
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .expiration-CVV {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .expirationWrapper {
+    width: 75%;
+  }
+
+  .CVVWrapper {
+    width: 20%;
+    input {
+      padding: 0 10px;
+    }
+  }
+
+  .expiration {
+    display: flex;
+    justify-content: space-between;
+    select {
+      width: 80px;
+      height: 35px;
+      padding: 0 15px;
+      background-color: white;
+    }
+    option[value=''][disabled] {
+      display: none;
+    }
+  }
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+  }
+}
+
+.cardnumber {
+  background-size: 34px 20px;
+  background-position-x: 95%;
+  background-position-y: 50%;
+}
+
+.cardnumber.Mastercard {
+  background: url(../../../../static/icons/MasterCard-dark.svg) no-repeat
+    transparent;
+  .cardnumber;
+}
+
+.cardnumber.Visa {
+  background: url(../../../../static/icons/Visa-dark.svg) no-repeat transparent;
+  .cardnumber;
+}
+
+@media (max-width: 500px) {
+  .component {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

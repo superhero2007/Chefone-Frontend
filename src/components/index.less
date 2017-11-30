@@ -1,0 +1,112 @@
+@import (reference) '../../styles/colors';
+@import (reference) '../../styles/variables';
+
+.intro-container {
+  .header-image {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-repeat: no-repeat;
+  }
+
+  h2 {
+    color: white;
+    margin: 72px 0 10px 0;
+    font-size: 68px;
+    line-height: 100px;
+
+    @media (max-width: @screen-sm) {
+      font-size: 30px;
+      margin-top: 40px;
+      line-height: 60px;
+    }
+  }
+
+  .how-it-works-btn {
+    font-size: 24px;
+    margin-top: 36px;
+  }
+
+  .link__anchor {
+    color: white;
+  }
+}
+
+.video-row {
+  //background-image: url('/static/icon_bg.png');
+  background-size: 100%;
+  height: 600px;
+  overflow: hidden;
+
+  @media (max-width: @screen-lg) {
+    height: 500px;
+  }
+
+  @media (max-width: @screen-md) {
+    height: 360px;
+  }
+
+  @media (max-width: @screen-sm) {
+    height: 300px;
+  }
+}
+
+.community-container {
+  margin: 41px auto 31px;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.reviews-container {
+  margin-top: 70px;
+  margin-bottom: 60px;
+
+  h3 {
+    margin-top: 5px;
+
+    &.text-primary {
+      margin-top: 30px;
+    }
+  }
+
+  p {
+    margin-top: 19px;
+    font-size: 14px;
+  }
+}
+
+.donate-container {
+  padding: 85px 0;
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .donate-image-text {
+    width: 100%;
+    margin-top: 75px;
+  }
+
+  .money-image {
+    width: 100%;
+  }
+}
+
+.show-more-btn {
+  color: @brand-success;
+  border: 1px solid @brand-success !important;
+  background-color: white;
+
+  .border-radius(4px);
+}

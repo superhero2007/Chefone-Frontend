@@ -1,0 +1,47 @@
+@import (reference) '../../../../../styles/z-index.less';
+
+.component {
+  z-index: @z-index-mobile-modal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  overflow: auto;
+
+  @media (max-height: 600px) {
+    max-height: 568px;
+  }
+
+  :global(.menu-item) {
+    line-height: 50px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-bottom: 30px;
+  background: url('../../../../../static/logo-chef-one.svg') no-repeat;
+  background-size: 100%;
+  width: 107px;
+  height: 28px;
+  z-index: @z-index-navbar;
+}
+
+.cross {
+  background: url('../../../../../static/icons/cross-orange.svg') no-repeat;
+  background-size: cover;
+  width: 12.17px;
+  height: 12.17px;
+  margin-top: 10px;
+  margin-right: 0;
+}

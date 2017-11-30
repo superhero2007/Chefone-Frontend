@@ -1,0 +1,76 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+@shamrock: #3ec197;
+@bright: #ffffff;
+
+@sub-lg: 770px;
+
+.panel {
+  display: flex;
+  background-color: @bright;
+  border-radius: 4px;
+}
+
+@pad: 15px;
+
+.title {
+  text-align: center;
+  margin: auto;
+  color: @bright;
+
+  .top {
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    color: #ffffff;
+    margin-top: 42px;
+    @media (max-width: @screen-lg) {
+      line-height: 28px;
+      margin-top: 26px;
+      font-size: 22px;
+      text-align: center;
+      line-height: 27px;
+      color: #ffffff;
+    }
+  }
+
+  .sub {
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    color: #ffffff;
+    @media (max-width: @screen-lg) {
+      margin-top: 0px;
+      line-height: 22px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+.component {
+  position: relative;
+  background-image: url('../../../../static/chefone_sweet-salty_bymarc_102016-431_ret.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 90px 17px;
+  padding-bottom: 59px;
+
+  @media (max-width: @screen-lg) {
+    padding: 0;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // flex-direction: row;
+    justify-content: center;
+  }
+}

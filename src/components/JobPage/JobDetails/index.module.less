@@ -1,0 +1,79 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.job-description-text {
+  font-family: Montserrat-light;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.component {
+  position: relative;
+  font-family: 'Montserrat-light';
+  background-color: @wild_sand;
+  padding-bottom: 25px;
+  @media (min-width: @screen-sm) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  p {
+    font-size: 16px;
+    color: @emperor;
+  }
+  ul {
+    color: @emperor;
+  }
+  h2 {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    color: @BRAND_PRIMARY;
+  }
+}
+
+.job {
+  header {
+    margin-bottom: 30px;
+    h2 {
+      @media (min-width: @screen-sm) {
+        float: left;
+      }
+    }
+    .btn-apply-for {
+      @media (min-width: @screen-sm) {
+        float: right;
+        margin-top: 22px;
+      }
+    }
+  }
+  p {
+    margin-bottom: 1.2em;
+  }
+  ul {
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 10px;
+    & li:before {
+      content: '-';
+      position: absolute;
+      margin-left: -10px;
+    }
+  }
+  .btn-apply-for {
+    background-color: @BRAND_PRIMARY;
+    color: #ffffff;
+    border-radius: 3px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    @media (min-width: @screen-sm) {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .btn-wrapper {
+    margin-top: 40px;
+    text-align: center;
+  }
+}

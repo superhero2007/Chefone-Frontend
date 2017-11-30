@@ -1,0 +1,101 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.component {
+  margin-bottom: 20px;
+
+  h2 {
+    font-family: Montserrat-Light;
+    text-align: center;
+    margin: 70px 0px;
+    margin-bottom: 47px;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .city-link {
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .city-link-vertical-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .city-name {
+    &:hover {
+      color: #823300;
+      text-decoration: underline;
+    }
+    font-family: Montserrat-Light;
+    font-size: 16px;
+    @media (max-width: @screen-sm) {
+      font-size: 20px;
+      height: 13px;
+    }
+    text-align: center;
+    color: #ce5100;
+  }
+
+  .flex {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+  }
+
+  .column {
+    .flex;
+    flex-direction: column;
+  }
+
+  .column-half {
+    .column;
+    flex-basis: 49%;
+  }
+
+  .column-big {
+    .flex;
+    flex-basis: 63%;
+    flex-direction: column;
+  }
+
+  .column-small {
+    .flex;
+    flex-basis: 35%;
+    flex-direction: column;
+  }
+
+  .row {
+    .flex;
+    flex-direction: row;
+    @media (max-width: @screen-md) {
+      margin-top: 10px;
+    }
+  }
+
+  .row-5 {
+    .row;
+    flex-basis: 48%;
+
+    @media (max-width: @screen-sm) {
+      flex-basis: 19%;
+    }
+  }
+
+  .city-card {
+    display: flex;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+}

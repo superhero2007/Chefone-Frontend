@@ -1,0 +1,124 @@
+@import (reference) '../../../../styles/variables';
+
+.container {
+  font-family: Montserrat-Light;
+  width: 100%;
+  background-color: #e4e4e4;
+
+  button {
+    width: 300px;
+    height: 50px;
+    border: 1.4px solid #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Montserrat-Light;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: transparent;
+  }
+}
+
+.gift-button {
+  margin: 0 auto;
+  margin-top: 26px;
+}
+
+.column {
+  text-align: center;
+  width: 100%;
+  padding-top: 1px;
+  flex-basis: 100%;
+}
+
+.gift {
+  background-image: url('../../../../static/gift_background.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+.gift-title {
+  margin-top: 125px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.gift-title-comment {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.subscribe {
+  text-align: center;
+  text-align: center;
+
+  h2 {
+    font-family: Montserrat-Light;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    text-align: center;
+    color: #ce5100;
+
+    @media (max-width: @screen-sm) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin: auto;
+    width: 480px;
+    font-size: 16px;
+    color: #555555;
+    @media (max-width: @screen-sm) {
+      width: 100%;
+    }
+
+    @media (max-width: @screen-sm) {
+      font-size: 14px;
+    }
+  }
+
+  input {
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 460px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    @media (max-width: @screen-sm) {
+      width: 250px;
+      font-size: 12px;
+    }
+  }
+
+  input::placeholder {
+    background-image: url('../../../../static/icons/message_gray.svg');
+    background-size: 5%;
+    background-repeat: no-repeat;
+    background-position: 24%;
+    @media (max-width: @screen-sm) {
+      background-position: 10%;
+      background-size: 7%;
+    }
+    text-align: center;
+  }
+
+  button {
+    border: none;
+    margin-top: 20px;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 22px;
+    font-family: Montserrat-Light;
+    @media (max-width: @screen-sm) {
+      font-size: 16px;
+      height: 35px;
+    }
+    background-color: #b6a809;
+    box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+    border-radius: 3px;
+  }
+}

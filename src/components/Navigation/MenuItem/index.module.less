@@ -1,0 +1,72 @@
+@import (reference) '../../../../styles/variables';
+
+@sub-lg: 770px;
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+:global {
+  @media (max-width: 1200px) {
+    div.help-link {
+      display: none;
+    }
+  }
+}
+
+.icon-collection {
+  display: flex;
+}
+
+.separator {
+  position: absolute;
+  top: 0;
+}
+
+.separator-right {
+  .separator;
+  right: 0;
+}
+
+.menu-item {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  line-height: 60px;
+  @media (max-width: @screen-md) {
+    text-align: left;
+    line-height: 45px;
+  }
+}
+
+.text {
+  cursor: pointer;
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  line-height: 19px;
+  color: #555555;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.text.no-margin {
+  margin-left: -11px;
+}
+
+.icon_left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  @media (max-width: @sub-lg) {
+    left: 0;
+  }
+}
+
+.icon_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

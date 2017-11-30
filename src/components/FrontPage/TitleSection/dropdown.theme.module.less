@@ -1,0 +1,36 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+@pad: 15px;
+@sub-lg: 770px;
+
+.select-styled {
+  padding-left: 0px;
+}
+.component {
+  width: 100%;
+  &-item {
+    display: flex;
+    font-family: Montserrat-Light;
+    font-size: 16px;
+  }
+  display: flex;
+  height: 28px;
+  @media (max-width: @sub-lg) {
+    width: initial;
+    ul {
+      width: inherit;
+    }
+  }
+  &:focus {
+    outline-color: transparent;
+  }
+  ul {
+    width: (210px - @pad*2);
+  }
+  & * {
+    border-radius: 0;
+    border-width: 0;
+    border-color: transparent !important;
+  }
+}

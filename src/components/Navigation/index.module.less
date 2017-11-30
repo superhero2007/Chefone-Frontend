@@ -1,0 +1,264 @@
+@import (reference) '../../../styles/colors';
+@import (reference) '../../../styles/variables';
+@import (reference) '../../../styles/z-index.less';
+
+@sub-lg: 770px;
+
+@menu-show-hide: 1100px;
+
+.auth-modal {
+  width: 500px;
+  @media (max-width: @screen-sm) {
+    width: 100%;
+    height: 100% !important;
+  }
+}
+.navbar-container :global(.menu-item) {
+  padding-left: 10px;
+}
+
+.navbar-container {
+  width: 100%;
+  box-shadow: 0 0 10px #666666;
+  background-color: white;
+  position: relative;
+  z-index: @z-index-navbar;
+  @media (max-width: @screen-sm) {
+    padding-top: 20px;
+  }
+}
+
+.main-nav-block {
+  display: flex;
+  margin-bottom: 0;
+  border-width: 0;
+  background-color: inherit;
+}
+
+.menu-icons-collections-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  display: none;
+
+  @media (min-width: @menu-show-hide) {
+    display: block;
+  }
+
+  :global(.icon-city) {
+    margin-top: -12px;
+  }
+  :global(.menu-item__icon_left) {
+    left: 22px;
+
+    @media (max-width: @sub-lg) {
+      left: 10px;
+    }
+  }
+}
+
+.mobile-menu-icon {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  @media (max-width: @screen-sm) {
+    top: 45px;
+  }
+
+  display: block;
+
+  @media (min-width: @menu-show-hide) {
+    display: none;
+  }
+
+  background: url('../../../static/icons/burger.svg') no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 11px;
+}
+
+.navbar {
+  height: 60px;
+  .column {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding-right: 14px;
+  }
+
+  .logo {
+    margin-top: 6px;
+    margin-left: 23px;
+    margin-right: 30px;
+    background: url('../../../static/logo-chef-one.svg') no-repeat;
+    background-size: 100%;
+    width: 166px;
+    height: 41px;
+    z-index: @z-index-navbar;
+
+    @media (max-width: @sub-lg) {
+      margin-right: 10px;
+      margin-left: 20px;
+    }
+    // @media (max-width: 768px) {
+    //   margin: 16px 10px;
+    //   background-size: 100%;
+    //   width: 120px;
+    //   height: 37px;
+    // }
+  }
+
+  .sign-buttons {
+    float: right;
+    margin-top: 8px;
+
+    a {
+      display: inline-block;
+      padding: 5px 10px;
+      height: 30px;
+      border: 2px solid @brand-gray;
+      color: @brand-gray;
+      font-size: 12px;
+      margin: 0 8px;
+      text-align: center;
+
+      .border-radius(5px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .menu-sm {
+    margin-top: 10px;
+
+    .dropdown {
+      display: block;
+      float: right;
+
+      .menu-trigger {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url('../../../static/icons/icon_menu_.svg') no-repeat;
+        background-size: 100%;
+        margin-right: 5px;
+      }
+
+      &__content {
+        position: fixed;
+        right: 0;
+        width: 211px;
+        margin-top: 15px;
+        background-color: @brand-primary;
+
+        .item {
+          display: block;
+          height: 50px;
+          width: 100%;
+          border-bottom: 1px solid white;
+          padding: 4px 25px;
+
+          &:last-child {
+            border: none;
+          }
+
+          .item-icon {
+            display: block;
+            float: right;
+            width: 40px;
+            height: 40px;
+            background-position: center;
+            background-size: 100%;
+            border-radius: 50%;
+          }
+          a {
+            display: block;
+            float: left;
+            width: 65%;
+            text-align: right;
+            margin: 5px 0;
+            padding: 5px;
+            font-size: 12px;
+            color: white;
+
+            .border-radius(5px);
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu-items {
+    float: right;
+    margin-top: 12px;
+
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
+
+    .item {
+      display: inline-block;
+      margin-right: 2px;
+
+      .item-icon {
+        display: inline-block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        background-position: center;
+        background-size: 100%;
+        border-radius: 50%;
+      }
+      a {
+        float: right;
+        color: @brand-gray;
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 22px;
+
+        .border-radius(5px);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-brand {
+    margin-bottom: 1rem;
+  }
+  &-toggle {
+    background: @BRAND_GRAY;
+    .icon-bar {
+      background: white;
+    }
+    &.collapsed {
+      background: white;
+      .icon-bar {
+        background: @BRAND_GRAY;
+      }
+    }
+  }
+  &-nav {
+    text-align: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    li,
+    button {
+      font-size: 1.2rem;
+      margin: 0 0.1rem;
+    }
+    .nav-link {
+      color: @BRAND_GRAY;
+    }
+  }
+}

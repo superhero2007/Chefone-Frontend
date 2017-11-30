@@ -1,0 +1,20 @@
+@import (reference) '../../../../styles/z-index';
+
+.create-event-button {
+  z-index: @z-index-create-event-btn;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  a {
+    width: 60px;
+    font-size: 36px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+      0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+}

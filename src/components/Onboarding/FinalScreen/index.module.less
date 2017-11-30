@@ -1,0 +1,38 @@
+@import (reference) '../../../../styles/colors.less';
+@import (reference) '../Share/index.module.less';
+@import (reference) '../../UIKit/Button/index.module.less';
+
+.font(@size: 16px) {
+  font-family: Montserrat-Light;
+  font-size: @size;
+}
+
+.panel-finish {
+  .panel-base;
+  .flex-center;
+  .banner {
+    width: 100%;
+    position: relative;
+    background-image: url('../../../../static/chefone_sweet-salty_bymarc.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    .photo {
+      width: 100%;
+    }
+    .logo {
+      padding: 20px 0;
+      width: 22%;
+      @media (max-width: 1325px) {
+        padding: 1.7% 0;
+      }
+    }
+  }
+  .done-text {
+    .font(20px);
+    color: @emperor;
+    margin: 40px 2em 0;
+  }
+  .button-finish {
+    margin: 30px 0 61px;
+  }
+}

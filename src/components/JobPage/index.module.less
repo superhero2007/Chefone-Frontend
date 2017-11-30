@@ -1,0 +1,260 @@
+@import (reference) '../../../styles/colors';
+@import (reference) '../../../styles/variables';
+
+.component {
+  position: relative;
+  font-family: 'Montserrat-Light';
+}
+
+.header {
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-family: 'Montserrat-UltraLight';
+  font-weight: bold;
+  @media (min-width: @screen-sm) {
+    padding-top: 110px;
+    height: 300px;
+  }
+  background-color: @brand-gray;
+  background-image: url('../../../static/jobs/top-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  color: #ffffff;
+  .small {
+    font-family: inherit;
+    color: inherit;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+
+    @media (max-width: @screen-md) {
+      font-size: 18px;
+    }
+  }
+  .big {
+    font-family: inherit;
+    color: inherit;
+    text-align: center;
+    font-size: 30px;
+
+    @media (max-width: @screen-md) {
+      font-size: 20px;
+    }
+  }
+}
+.banner {
+  height: auto;
+  background-color: @BRAND_PRIMARY;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-family: 'Montserrat-UltraLight';
+  article {
+    padding: (@grid-gutter-width/2);
+  }
+  @media (min-width: @screen-sm) {
+    padding-bottom: 30px;
+    height: 220px;
+  }
+  .intro {
+    font-family: inherit;
+    color: inherit;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 19px;
+    background-image: url(../../../static/jobs/left-quote.svg);
+    background-repeat: no-repeat;
+  }
+  .author {
+    color: inherit;
+    display: inline-block;
+    width: 300px;
+    .avatar {
+      float: left;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background-position: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .details {
+      float: left;
+      text-align: left;
+      margin: 3px 10px;
+
+      .name {
+        color: inherit;
+        font-weight: bold;
+      }
+      .position {
+        font-size: 14px;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.about-section {
+  height: 650px;
+  background-image: url('../../../static/jobs/about-section.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+
+  @media (max-width: @screen-md) {
+    height: initial;
+    padding: 40px 20px;
+  }
+
+  .details-outer {
+    width: 1225px;
+    margin: 100px auto;
+
+    @media (max-width: @screen-md) {
+      width: 100%;
+      margin: 0;
+    }
+
+    .details-inner {
+      width: 660px;
+      background-color: white;
+      padding: 60px;
+      margin-left: 20px;
+      opacity: 0.95;
+
+      @media (max-width: @screen-md) {
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 30px;
+        line-height: 36px;
+        color: @brand-primary;
+        margin: 0 0 20px;
+
+        @media (max-width: @screen-md) {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify;
+        line-height: 29px;
+        color: #555555;
+
+        @media (max-width: @screen-md) {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+.job-offers {
+  position: relative;
+  color: @emperor;
+  background-color: @wild_sand;
+  padding: 40px 20px;
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+  a {
+    color: @emperor;
+  }
+  .job-group {
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 40px;
+    img {
+      margin-right: 20px;
+    }
+    h3 {
+      color: @BRAND_PRIMARY;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 21px;
+    }
+    ul {
+      margin-bottom: 31px;
+      list-style-type: none;
+      padding: 0;
+      li {
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 11px;
+      }
+    }
+  }
+}
+
+.order(@order) {
+  order: @order;
+}
+
+.why-section {
+  display: flex;
+  align-items: stretch;
+
+  min-height: calc(80vh);
+  position: relative;
+
+  @media (max-width: @screen-md) {
+    display: block;
+    max-height: none;
+  }
+
+  .image {
+    .order(1);
+    width: 50%;
+    display: block;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../../static/jobs/details-section.png');
+
+    @media (max-width: @screen-md) {
+      height: 350px;
+      width: 100%;
+    }
+  }
+
+  .text {
+    .order(2);
+    width: 50%;
+    display: block;
+    text-align: left;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #555555;
+    padding: 70px;
+    margin-bottom: 35px;
+    margin: 0;
+
+    @media (max-width: @screen-md) {
+      padding: 35px;
+      width: 100%;
+    }
+
+    h2 {
+      color: @brand-primary;
+    }
+  }
+}

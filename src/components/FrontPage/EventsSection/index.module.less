@@ -1,0 +1,75 @@
+@import (reference) '../../../../styles/variables';
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.events-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 390px;
+  @media (max-width: @screen-sm) {
+    height: 210px;
+  }
+}
+
+.component {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+
+  @media (max-width: @screen-sm) {
+    & > div {
+      padding: 0;
+    }
+  }
+
+  .best-event-card {
+    .card;
+    // height:390px;
+    // @media (max-width: @screen-sm) {
+    //   height: 335px;
+    // }
+    background-color: white;
+    padding: 30px 33px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+    }
+
+    hr {
+      margin: 20px 0 !important;
+    }
+  }
+
+  .chef-event-row {
+    text-align: left;
+    width: 100%;
+  }
+
+  .chef-bio-container {
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    color: #555555;
+
+    .chef-bio {
+      margin-top: 24px;
+      text-align: left;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      height: 63px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    a {
+      display: block;
+      text-align: left;
+    }
+  }
+}

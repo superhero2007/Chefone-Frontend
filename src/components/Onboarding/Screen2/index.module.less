@@ -1,0 +1,41 @@
+@import (reference) '../../../../styles/colors.less';
+@import (reference) '../Share/index.module.less';
+@import (reference) '../../UIKit/Button/index.module.less';
+
+.prefs-screen + .bottom-navigator {
+  margin-top: 47px;
+}
+
+.prefs-screen .sub-panel {
+  background-color: red;
+  // margin-bottom: 17px;
+}
+
+.button- {
+  &prefs {
+    text-align: start;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+.iconpath(@name) {
+  &-@{name} {
+    &:before {
+      content: url('../../../../static/icons/@{name}.svg');
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 2em 0 20px;
+    }
+  }
+}
+
+.icon {
+  .iconpath(omnivore);
+  .iconpath(vegetarian);
+  .iconpath(vegan);
+}
+
+.row + .row {
+  margin-top: 20px;
+}

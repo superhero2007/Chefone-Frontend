@@ -1,0 +1,12 @@
+#!/bin/bash
+# Stops accidental commits to master and develop. https://gist.github.com/stefansundin/9059706
+# Install:
+# cd path/to/git/repo
+# curl -fL -o .git/hooks/pre-commit https://gist.githubusercontent.com/stefansundin/9059706/raw/pre-commit
+# chmod +x .git/hooks/pre-commit
+
+# BRANCH=`git rev-parse --abbrev-ref HEAD`
+#
+# if [[ "$BRANCH" != "master" && "$BRANCH" != "develop" ]]; then
+#   echo " [ci skip]" >> $1
+# fi

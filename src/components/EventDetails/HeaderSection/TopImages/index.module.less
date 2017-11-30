@@ -1,0 +1,26 @@
+@import (reference) '../../../../../styles/z-index.less';
+
+.top-images-background-container {
+  position: relative;
+}
+
+.top-images-background-container::after {
+  content: '';
+  background-image: url('../../../../../static/icon_bg.png');
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: @z-index-top-images - 1;
+}
+
+.top-images {
+  display: inline-flex;
+  //margin: 15px;
+}
+.top-image {
+  padding: 0;
+}

@@ -1,0 +1,26 @@
+@import (reference) '../share.module.less';
+
+// Shared mixins
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Shared styles
+
+.background {
+  background-color: @wild_sand;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+// Component styles
+
+.landing-panel {
+  .align-center;
+  width: 100%;
+}

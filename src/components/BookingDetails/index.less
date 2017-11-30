@@ -1,0 +1,239 @@
+@import (reference) '../../../styles/colors';
+@import (reference) '../../../styles/variables';
+
+.booking-details {
+  color: @brand-gray;
+  padding-bottom: 20px;
+
+  .image-container {
+    @media (max-width: @screen-sm) {
+      padding: 0;
+    }
+  }
+
+  .food-image {
+    width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    color: @brand-gray;
+    text-transform: uppercase;
+    margin: 40px;
+    font-size: 26px;
+  }
+
+  .details-block {
+    box-shadow: 0 0 10px #666666;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: white;
+
+    @media (max-width: @screen-md) {
+      padding: 0 10px;
+    }
+
+    h3 {
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .avatar {
+      max-width: 75px;
+    }
+
+    .chef-name,
+    .chef-phone {
+      font-family: Montserrat, serif;
+      font-size: 22px;
+      font-weight: normal;
+      text-align: center;
+      color: @brand-primary;
+    }
+
+    hr {
+      color: @brand-gray;
+      border: 1px solid @brand-gray;
+      margin: 10px 0;
+    }
+
+    .info-block {
+      padding: 20px 40px 0;
+
+      @media (max-width: @screen-lg) {
+        padding: 10px 20px 0;
+      }
+    }
+
+    .info-table {
+      width: 100%;
+      margin-bottom: 10px;
+
+      td {
+        color: @brand-gray;
+        text-align: left;
+        min-width: 130px;
+        width: 50%;
+        font-size: 12px;
+
+        &.table-title {
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+
+        &.attendees-block {
+          width: 100%;
+        }
+      }
+
+      .rating {
+        font-size: 8px;
+      }
+    }
+
+    .attendees-block {
+      .attendee {
+        display: block;
+        float: left;
+        margin: 5px 20px 0;
+
+        @media (max-width: @screen-lg) {
+          margin: 5px 5px 0;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        img {
+          @media (max-width: @screen-lg) {
+            width: 50px !important;
+            height: 50px !important;
+          }
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      img {
+        display: inline-block;
+      }
+    }
+    .message {
+      font-size: 16px;
+      width: 100%;
+      min-height: 165px;
+      border: 1px solid @brand-gray;
+      border-radius: 5px 5px;
+      padding: 12px;
+
+      div {
+        color: @brand-primary;
+      }
+    }
+  }
+
+  .messages-block {
+    box-shadow: 0 0 10px #666666;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: white;
+
+    .messages {
+      padding: 20px;
+
+      .message {
+        font-size: 14px;
+        border-bottom: none;
+        cursor: default;
+        margin: 20px 0px;
+
+        .message-text {
+          background-color: #fdf7f3;
+          padding: 20px 20px 40px;
+          border-radius: 5px;
+
+          &:before {
+            content: ' ';
+            position: absolute;
+            width: 0;
+            height: 0;
+            right: -8px;
+            top: 25px;
+            bottom: auto;
+            border: 12px solid;
+            border-color: transparent transparent transparent #fdf7f3;
+          }
+
+          &.chef-message {
+            background-color: #f7f8f8;
+
+            &:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: -8px;
+              top: 25px;
+              bottom: auto;
+              border: 12px solid;
+              border-color: transparent #f7f8f8 transparent transparent;
+            }
+          }
+        }
+
+        .message-date {
+          width: 100%;
+          text-align: right;
+          font-size: 10px;
+          margin-top: 10px;
+          padding-right: 20px;
+        }
+
+        .sender {
+          p {
+            text-align: center;
+            width: 100%;
+          }
+          img {
+            margin: auto;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .message-input {
+      position: relative;
+
+      textarea {
+        border: 1px solid #666;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        color: #666666;
+        padding: 10px 60px 10px 10px;
+        outline: none;
+      }
+
+      .right-arrow {
+        z-index: 1;
+        position: absolute;
+        display: inline-block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        top: 5px;
+        right: 20px;
+        background-image: url(../../../static/icons/right_arrow.svg);
+      }
+    }
+  }
+}

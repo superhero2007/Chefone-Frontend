@@ -1,0 +1,16 @@
+version: "3"
+services:
+  c1-frontend-builder:
+    build:
+      context: .
+      dockerfile: Dockerfile.docker
+    environment:
+      - SSH_AUTH_SOCK
+    volumes:
+      - $SSH_AUTH_SOCK:$SSH_AUTH_SOCK
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: npm run catl
+  c1-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile1

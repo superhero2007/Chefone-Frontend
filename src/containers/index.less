@@ -1,0 +1,111 @@
+@import (reference) '../../styles/colors';
+@import (reference) '../../styles/variables';
+@import (reference) '../../styles/z-index.less';
+
+main {
+  background-color: white;
+}
+
+.terms-container,
+.refund-container {
+  padding: 20px 0;
+}
+.terms-container,
+.legal-container {
+  h1 {
+    text-align: center;
+  }
+}
+
+.confirm-container {
+  position: relative;
+  padding: 40px 0;
+
+  .nutrition-buttons {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+
+    &.active {
+      background-color: @brand-primary;
+      color: white;
+    }
+  }
+
+  .border {
+    border-color: @brand-primary;
+  }
+
+  .avatar-preview {
+    width: 100%;
+    max-width: 300px;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+
+  .button {
+    background-color: #b6a809;
+    &.disabled {
+      background-color: #666666;
+    }
+    font-family: Montserrat;
+    font-size: 23px;
+    color: #ffffff;
+    padding: 0 47px;
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+  }
+}
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 0;
+  border: 0;
+  margin-top: 10px;
+
+  .panel-body {
+    color: @brand-primary;
+    text-transform: uppercase;
+    padding-top: 30px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    border: 1px solid @brand-primary;
+    height: 55px;
+    background: rgba(255, 255, 255, 0);
+    color: @brand-primary;
+  }
+
+  textarea {
+    height: 195px;
+    padding-top: 18px;
+  }
+
+  input[type='submit'] {
+    text-transform: uppercase;
+    color: white;
+    background-color: @brand-success;
+    border: 0;
+    width: 270px;
+    height: 55px;
+    font-size: 28px;
+  }
+}
+
+.sofort-result-container {
+  padding: 270px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.invisible {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,70 @@
+@import (reference) '../../../styles/variables';
+
+.component {
+  text-align: left;
+}
+.chef-event-data {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.chef-column {
+  background-color: #f6f6f6;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 120px;
+  height: 100px;
+}
+
+.chef-name {
+  font-family: Montserrat-Light;
+  font-size: 30px;
+  margin-bottom: 10px;
+  @media (max-width: @screen-sm) {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 19px;
+  }
+  color: #555555;
+}
+
+.geo-location {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  margin-bottom: 10px;
+  @media (max-width: @screen-sm) {
+    font-size: 13px;
+    margin-bottom: 2px;
+    line-height: 16px;
+  }
+  line-height: 18px;
+  color: #7f7f7f;
+}
+
+.chef-wrapper {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+.chef-avatar {
+  background-image: url('../../../static/icons/username_orange.svg');
+  margin-right: 20px;
+  display: inline-block;
+  width: 101px;
+  height: 101px;
+  @media (max-width: @screen-sm) {
+    width: 50px;
+    height: 50px;
+  }
+  border-radius: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.name {
+  font-family: Montserrat-Light;
+  font-size: 13px;
+  color: #555555;
+}

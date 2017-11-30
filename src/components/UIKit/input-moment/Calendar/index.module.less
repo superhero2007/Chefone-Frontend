@@ -1,0 +1,104 @@
+@import (reference) '../less/variables.module.less';
+@import (reference) '../../../../../styles/colors.less';
+@import (reference) '../../../../../styles/z-index.less';
+
+.m-calendar {
+  background-color: @brand-primary;
+  display: inline-block;
+  td {
+    font-family: Montserrat-Light;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+  }
+
+  td {
+    padding: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #4a4a4a;
+    background-color: #ffffff;
+    border: 1px solid @color-gray;
+  }
+
+  thead {
+    td {
+      background-color: @brand-primary;
+      border: none;
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+
+  tbody td {
+    color: #666666;
+  }
+
+  .selected {
+    background: @brand-primary;
+    border-color: @brand-primary;
+    color: @color-white;
+  }
+
+  .current-day {
+    color: @brand-primary;
+    font-weight: bold;
+  }
+
+  .prev-month,
+  .next-month {
+    color: #ced1d2;
+  }
+
+  .disabled {
+    background-color: #f0f0f0;
+    color: #ced1d2;
+  }
+
+  .toolbar {
+    margin-top: 18px;
+    line-height: 30px;
+    color: @brand-primary;
+    text-align: center;
+    margin-bottom: 13px;
+
+    button {
+      position: relative;
+      width: 32px;
+      height: 30px;
+      line-height: 30px;
+      color: #ffffff;
+      border: none;
+      background: @brand-primary;
+      font-size: 20px;
+      padding: 0;
+      text-align: center;
+      outline: 0;
+      z-index: @z-index-calendar + 5;
+      cursor: pointer;
+    }
+
+    .prev-month {
+      float: left;
+    }
+
+    .next-month {
+      float: right;
+    }
+
+    .current-date {
+      height: 19px;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 126.6 60.1" style="enable-background:new 0 0 126.6 60.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B8B8B8;}
+	.st1{fill:#FFFFFF;}
+	.st2{opacity:0.2;fill:url(#SVGID_1_);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#187FAB;}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:#195A7F;}
+	.st5{opacity:0.2;fill:url(#SVGID_2_);}
+	.st6{fill:#0066B0;}
+	.st7{fill:#F7A333;}
+	.st8{opacity:0.2;fill:url(#SVGID_3_);}
+	.st9{fill:#E40520;}
+	.st10{fill:#FAB31E;}
+	.st11{opacity:0.2;fill:url(#SVGID_4_);}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M121.7,60.1H4.9c-2.7,0-4.9-2.2-4.9-4.9V6.9C0,4.2,2.2,2,4.9,2h116.8c2.7,0,4.9,2.2,4.9,4.9v48.3
+			C126.6,57.9,124.4,60.1,121.7,60.1z"/>
+		<path class="st1" d="M121.3,58.1H5.2c-2.9,0-5.2-2.4-5.2-5.2V5.2C0,2.4,2.4,0,5.2,0h116.1c2.9,0,5.2,2.4,5.2,5.2v47.6
+			C126.6,55.8,124.2,58.1,121.3,58.1z"/>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="63.2815" y1="58.1393" x2="63.2815" y2="-2.607521e-09">
+			<stop  offset="0" style="stop-color:#000000"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<path class="st2" d="M121.3,58.1H5.2c-2.9,0-5.2-2.4-5.2-5.2V5.2C0,2.4,2.4,0,5.2,0h116.1c2.9,0,5.2,2.4,5.2,5.2v47.6
+			C126.6,55.8,124.2,58.1,121.3,58.1z"/>
+	</g>
+	<g>
+		<polygon class="st6" points="58.2,39.5 52.8,39.5 56.2,19 61.5,19 		"/>
+		<path class="st6" d="M48.4,19l-5.1,14.1l-0.6-3l-1.8-9.2c0,0-0.2-1.8-2.5-1.8h-8.4l-0.1,0.3c0,0,2.6,0.5,5.6,2.3l4.6,17.8h5.6
+			L54.1,19H48.4z"/>
+		<path class="st6" d="M90.3,39.5h4.9L91,19h-4.3c-2,0-2.5,1.5-2.5,1.5l-8,19h5.6l1.1-3h6.8L90.3,39.5z M84.5,32.2l2.8-7.7l1.6,7.7
+			H84.5z"/>
+		<path class="st6" d="M76.7,23.9l0.8-4.4c0,0-2.3-0.9-4.8-0.9c-2.6,0-8.9,1.2-8.9,6.8c0,5.3,7.4,5.4,7.4,8.1s-6.6,2.3-8.8,0.5
+			l-0.8,4.6c0,0,2.4,1.2,6,1.2c3.6,0,9.1-1.9,9.1-7c0-5.3-7.4-5.8-7.4-8.1C69.2,22.3,74.4,22.6,76.7,23.9"/>
+		<path class="st7" d="M42.7,30l-1.8-9.2c0,0-0.2-1.8-2.5-1.8h-8.4l-0.1,0.3c0,0,4,0.8,7.9,4C41.5,26.3,42.7,30,42.7,30"/>
+	</g>
+</g>
+</svg>

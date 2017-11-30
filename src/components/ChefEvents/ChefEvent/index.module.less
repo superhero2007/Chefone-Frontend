@@ -1,0 +1,136 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.chef-event {
+  overflow: hidden;
+  box-shadow: 0 0 10px #666666;
+  background-color: white;
+  margin: 40px 0;
+  color: @brand-gray;
+  height: 293px;
+
+  @media (max-width: @screen-lg) {
+    height: 345px;
+  }
+
+  @media (max-width: @screen-md) {
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .chef-event-info {
+    padding-right: 45px;
+    padding-top: 9px;
+    height: 293px;
+
+    @media (max-width: @screen-lg) {
+      height: 345px;
+    }
+
+    @media (max-width: @screen-md) {
+      padding: 45px 45px 15px;
+      height: auto;
+    }
+
+    h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      margin: 10px 0 5px;
+      color: @brand-gray;
+    }
+
+    .chef-event-date {
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    hr {
+      display: block;
+      border: none;
+      color: white;
+      height: 1px;
+      background: @brand-gray;
+      background: -webkit-gradient(
+        radial,
+        50% 50%,
+        0,
+        50% 50%,
+        350,
+        from(#ddd),
+        to(#fff)
+      );
+      margin: 7px 0;
+    }
+
+    .btn-row {
+      // position: absolute;
+      bottom: 15px;
+      width: 100%;
+      padding-right: 36px;
+
+      @media (max-width: @screen-md) {
+        padding-right: 0;
+        position: static;
+        width: inherit;
+      }
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+      width: 180px;
+      margin-top: 10px;
+
+      &.btn-secondary-outline {
+        color: #989898;
+        border: 2px solid #989898;
+      }
+      &.btn-secondary {
+        color: white;
+        background-color: #989898;
+      }
+      &.btn-danger {
+        color: white;
+        background-color: @brand-primary;
+      }
+    }
+
+    .edit-event-btn,
+    .remove-event-btn {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      float: right;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 10px 0 0 10px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .edit-event-btn {
+      background-size: 112%;
+      background-image: url('../../../../static/icons/edit_gray.svg');
+
+      &:hover {
+        background-image: url('../../../../static/icons/edit_orange.svg');
+      }
+    }
+    .remove-event-btn {
+      background-size: 80%;
+      background-image: url('../../../../static/icons/remove_gray.svg');
+
+      &:hover {
+        background-image: url('../../../../static/icons/remove_orange.svg');
+      }
+    }
+  }
+}

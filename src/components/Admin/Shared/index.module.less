@@ -1,0 +1,97 @@
+@import (reference) '../../../../styles/z-index';
+
+.base_check {
+  display: inline-block;
+  width: 13.3px;
+  height: 13.3px;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+  line-height: 10px;
+  border-radius: 13.3px;
+}
+
+.success_check {
+  .base_check;
+  line-height: 13px;
+  background-color: #00c329;
+}
+
+.fail_check {
+  .base_check;
+  background-color: #ce5100;
+}
+
+.phone_call,
+.email_icon {
+  display: inline-block;
+  width: 14.1px;
+  height: 15.3px;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.chef-name {
+  font-family: Montserrat-Regular;
+  font-size: 16px;
+  color: #555555;
+}
+
+.phone span,
+.email span {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+
+.modal-body {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  color: #555555;
+  padding: 20px 30px;
+}
+
+.message {
+  cursor: pointer;
+  background-size: cover;
+  width: 19.9px;
+  height: 14.2px;
+  display: inline-block;
+}
+
+.modal {
+  hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  position: fixed;
+  z-index: @z-index-modal;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  .modal-content {
+    margin: auto;
+    margin-top: 311px;
+    width: 500px;
+    height: 300px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+
+    .cross {
+      cursor: pointer;
+      text-align: center;
+      float: right;
+      width: 23.5px;
+      height: 23.5px;
+      border: 1px solid #7f7f7f;
+      border-radius: 23px;
+    }
+
+    .header {
+      padding: 20px;
+    }
+  }
+}

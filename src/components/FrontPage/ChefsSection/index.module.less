@@ -1,0 +1,73 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.chef-button-row {
+  margin-top: 25px;
+}
+.chef-button {
+  width: 290px !important;
+  margin: auto;
+  text-align: center;
+}
+.component {
+  color: @gray-light;
+  // margin-bottom: 50px;
+  padding: 20px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.avatar {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  @media (max-width: @screen-sm) {
+    width: 100px;
+    height: 100px;
+  }
+  background-repeat: no-repeat;
+  background-size: 237%;
+  background-position: 39% 0%;
+  border-radius: 200px;
+}
+
+.chef-3 {
+  .avatar {
+    background-position: 45% 0%;
+  }
+}
+
+.article-author {
+  margin-top: 20px;
+  font-family: Montserrat-Light;
+  font-size: 26px;
+  @media (max-width: @screen-sm) {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+  line-height: 31px;
+  color: #555555;
+  text-transform: uppercase;
+}
+
+.article-title {
+  margin-top: 30px;
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  line-height: 23px;
+  color: #7f7f7f;
+  @media (max-width: @screen-sm) {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555555;
+  }
+}
+
+.card {
+  display: block;
+  @media (max-width: @screen-sm) {
+    margin-top: 40px;
+  }
+}

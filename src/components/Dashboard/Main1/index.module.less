@@ -1,0 +1,336 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.chef-events-container {
+  padding: 0 0 40px 0;
+  background-color: @wild_sand;
+  font-family: @main-font-family;
+
+  .section-header {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 37px;
+    color: @text-color;
+  }
+
+  h1 {
+    margin: 40px 0;
+    width: 100%;
+    text-align: left;
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .invite-friends-row {
+    position: relative;
+    color: @text-color;
+    overflow: hidden;
+    background-color: #e7e7e7;
+    padding: 35px 15px;
+
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      color: #888888;
+      text-decoration: none;
+      &:hover {
+        color: #555555;
+      }
+    }
+
+    .present-icon {
+      float: left;
+      width: 70px;
+      height: 75px;
+      background-image: url('../../../../static/icons/birthday.svg');
+      background-repeat: no-repeat;
+
+      @media (max-width: @screen-md) {
+        display: block;
+        float: none;
+        margin: auto;
+      }
+    }
+
+    .text {
+      float: left;
+      margin-left: 30px;
+
+      h2 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 37px;
+        margin-top: 14px;
+        margin-bottom: 6px;
+        font-family: @main-font-family;
+
+        @media (max-width: 1200px) {
+          font-size: 26px;
+        }
+        @media (max-width: @screen-lg) {
+          font-size: 22px;
+        }
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        margin-top: 0;
+        font-family: @main-font-family;
+      }
+
+      @media (max-width: @screen-lg) {
+        margin-left: 20px;
+      }
+      @media (max-width: @screen-md) {
+        display: block;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      background-color: #4cc99e;
+      box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+      border-radius: 3px;
+      border: none;
+      float: right;
+      color: white;
+      margin-top: 20px;
+
+      @media (max-width: @screen-lg) {
+        font-size: 14px;
+        width: 150px;
+      }
+      @media (max-width: @screen-md) {
+        display: block;
+        float: none;
+        margin: auto;
+      }
+    }
+  }
+
+  .tips {
+    padding: 35px 0 0;
+    overflow: hidden;
+
+    h2 {
+      font-family: @main-font-family;
+      font-size: 30px;
+      font-weight: 200;
+      line-height: 37px;
+      color: #555555;
+    }
+    .tips-list {
+      font-family: @main-font-family;
+      overflow: hidden;
+      margin-top: 25px;
+
+      li {
+        float: left;
+        color: @brand-primary;
+        margin-bottom: 20px;
+
+        &:first-child {
+          margin-right: 150px;
+          @media (max-width: 1200px) {
+            margin-right: 100px;
+          }
+        }
+
+        .name {
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 22px;
+        }
+
+        .text {
+          display: block;
+          color: @text-color;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 19px;
+          margin-top: 7px;
+        }
+      }
+    }
+    hr {
+      width: 100%;
+      border-top: 1px solid #cacaca;
+      margin-top: 30px;
+    }
+  }
+
+  .chef-event-list {
+    h1 {
+      margin: 40px 0;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center;
+      color: @brand-gray;
+      font-size: 26px;
+      font-weight: normal;
+    }
+
+    .chef-event {
+      overflow: hidden;
+      box-shadow: 0 0 10px #666666;
+      background-color: white;
+      margin: 40px 0;
+      color: @brand-gray;
+      height: 293px;
+
+      @media (max-width: @screen-lg) {
+        height: 345px;
+      }
+
+      @media (max-width: @screen-md) {
+        height: auto;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .chef-event-info {
+        padding-right: 45px;
+        padding-top: 9px;
+        height: 293px;
+
+        @media (max-width: @screen-lg) {
+          height: 345px;
+        }
+
+        @media (max-width: @screen-md) {
+          padding: 45px 45px 15px;
+          height: auto;
+        }
+
+        h3 {
+          font-size: 22px;
+          text-transform: uppercase;
+          margin: 10px 0 5px;
+          color: @brand-gray;
+        }
+
+        .chef-event-date {
+          margin-top: 16px;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        hr {
+          display: block;
+          border: none;
+          color: white;
+          height: 1px;
+          background: @brand-gray;
+          background: -webkit-gradient(
+            radial,
+            50% 50%,
+            0,
+            50% 50%,
+            350,
+            from(#ddd),
+            to(#fff)
+          );
+          margin: 7px 0;
+        }
+
+        .btn-row {
+          position: absolute;
+          bottom: 15px;
+          width: 100%;
+          padding-right: 36px;
+
+          @media (max-width: @screen-md) {
+            padding-right: 0;
+            position: static;
+            width: inherit;
+          }
+        }
+
+        .btn {
+          font-size: 14px;
+          padding: 10px 20px;
+          width: 180px;
+          margin-top: 10px;
+
+          &.btn-secondary-outline {
+            color: #989898;
+            border: 2px solid #989898;
+          }
+          &.btn-secondary {
+            color: white;
+            background-color: #989898;
+          }
+          &.btn-danger {
+            color: white;
+            background-color: @brand-primary;
+          }
+        }
+
+        .edit-event-btn,
+        .remove-event-btn {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          float: right;
+          background-repeat: no-repeat;
+          background-position: center center;
+          margin: 10px 0 0 10px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .edit-event-btn {
+          background-size: 112%;
+          background-image: url('../../../../static/icons/edit_gray.svg');
+
+          &:hover {
+            background-image: url('../../../../static/icons/edit_orange.svg');
+          }
+        }
+        .remove-event-btn {
+          background-size: 80%;
+          background-image: url('../../../../static/icons/remove_gray.svg');
+
+          &:hover {
+            background-image: url('../../../../static/icons/remove_orange.svg');
+          }
+        }
+      }
+    }
+  }
+  .select-city-list {
+    h1 {
+      color: @brand-gray;
+      text-transform: uppercase;
+      font-size: 22px;
+    }
+
+    h4 {
+      color: @brand-primary;
+      font-size: 14px;
+    }
+
+    .cities-list {
+      margin: auto;
+    }
+  }
+  .support-msg {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .next-btn {
+    margin-top: 40px;
+  }
+}

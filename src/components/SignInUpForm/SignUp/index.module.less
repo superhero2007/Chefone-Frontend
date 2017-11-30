@@ -1,0 +1,167 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+@screen-mob: 480px;
+
+.invite-msg {
+  background-color: transparent;
+}
+
+.avatar-img {
+  margin-bottom: 10px;
+}
+
+.inviting-user-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inviting-user-avatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-size: contain;
+  background-position: center;
+}
+
+.component {
+  a {
+    cursor: pointer;
+  }
+  position: relative;
+
+  @media (max-width: @screen-mob) {
+    padding: 60px 20px 0;
+  }
+  margin: 0 auto;
+  padding: 50px;
+  font-family: 'Montserrat-light';
+
+  input[type='text'],
+  input[type='password'],
+  input[type='email'] {
+    border-radius: 3px;
+    height: 50px;
+  }
+  button {
+    border-radius: 3px;
+    height: 50px;
+  }
+  label {
+    text-align: center;
+    @media (max-width: 360px) {
+      padding-left: 0;
+    }
+    @media (min-width: @screen-mob) {
+      text-align: left;
+    }
+    em {
+      color: @BRAND_PRIMARY;
+      font-style: normal;
+    }
+  }
+
+  ::placeholder {
+    color: #7f7f7f;
+  }
+}
+
+.facebook {
+  background-color: @facebook !important;
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  margin: 0;
+  min-width: 100%;
+  position: relative;
+  img {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    width: 10px;
+    height: auto;
+    display: none;
+    @media (min-width: @screen-mob) {
+      display: block;
+    }
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.hr-oder {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: #555555;
+  margin-bottom: 28px;
+  margin-top: 28px;
+  font-size: 14px;
+  @media (max-width: @screen-mob) {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+  &:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    right: 62%;
+    height: 2px;
+    background-color: #c6c6c6;
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    right: 0%;
+    left: 62%;
+
+    top: 10px;
+    height: 2px;
+    background-color: #c6c6c6;
+  }
+}
+.my-row {
+  margin-bottom: 20px;
+}
+.col-md-6-left {
+  @media (min-width: @screen-md) {
+    padding-right: 10px;
+  }
+}
+.col-md-6-right {
+  @media (min-width: @screen-md) {
+    padding-left: 10px;
+  }
+}
+.btn-custom-1 {
+  width: 100%;
+  background-color: @BRAND_PRIMARY;
+  color: #fff;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: lighten(@BRAND_PRIMARY, 10%);
+    color: #fff !important;
+  }
+}
+.checkbox {
+  clear: both;
+  margin-top: 31px;
+  margin-bottom: 19px;
+}
+.signup-text {
+  text-align: center;
+  @media (max-width: @screen-mob) {
+    margin-top: 20px;
+  }
+  margin-top: 50px;
+  a {
+    margin-left: 7px;
+    display: block;
+    @media (min-width: 380px) {
+      display: inline;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import (reference) '../../../../styles/colors.less';
+@import (reference) '../../../../styles/variables.less';
+
+.component {
+  padding: 10px 20px;
+
+  @media (min-width: @screen-md) {
+    padding: 30px 40px;
+  }
+}
+
+.text {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.discount-text {
+  color: #444;
+  font-weight: 700;
+}
+
+.input-button {
+  height: 51px;
+  margin: 0;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.focus {
+  outline: none;
+  box-shadow: 0 0 8px @brand-primary;
+}
+
+.input-button-col {
+  height: 51px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.photo-col {
+  position: relative;
+  padding: 0;
+}
+
+.photo {
+  background-image: url('../../../../static/drinking-people.jpg');
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.message-icon {
+  background-image: url('../../../../static/icons/message_gray.svg');
+  width: 21px;
+  height: 15px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  display: none;
+  @media (min-width: @screen-md) {
+    left: 42px;
+    display: block;
+  }
+}

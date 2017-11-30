@@ -1,0 +1,77 @@
+@import (reference) '../../../../styles/colors.less';
+@import (reference) '../Share/index.module.less';
+@import (reference) '../../UIKit/Button/index.module.less';
+
+.input-font {
+  .font();
+}
+
+.field {
+  width: 400px !important;
+  @media (max-width: 720px) {
+    width: 100% !important;
+  }
+  input& {
+    height: 50px;
+    padding: 14px 18px;
+  }
+  textarea& {
+    padding: 14px 18px;
+  }
+}
+
+.filled (@color) {
+  background-color: @color;
+}
+
+.button- {
+  &next {
+    .button();
+    &:hover {
+      color: @bright;
+    }
+    color: @bright;
+    .filled(@brand-primary);
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dob {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .label {
+    .font();
+    color: @emperor;
+  }
+  .dropdowns {
+    .flex-row;
+    padding-top: 1em;
+    .item {
+      width: inherit;
+      padding-left: 15px !important;
+    }
+    .item + .item {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.row + .row {
+  margin-top: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

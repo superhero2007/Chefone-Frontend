@@ -1,0 +1,129 @@
+@import (reference) '../../../styles/colors.less';
+@import (reference) '../../../styles/variables.less';
+
+.message {
+  height: 120px;
+  box-shadow: 0 0 10px #666666;
+  margin-bottom: 10px;
+  background-color: white;
+
+  @media (max-width: @screen-sm) {
+    height: 100px;
+  }
+
+  .message-details {
+    padding: 0 20px;
+
+    @media (max-width: @screen-lg) {
+      padding: 0 40px 0 10px;
+    }
+
+    @media (max-width: @screen-md) {
+      padding: 0 30px;
+    }
+    @media (max-width: @screen-sm) {
+      padding: 10px 30px 0 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 12px;
+      margin-bottom: 5px;
+
+      @media (max-width: @screen-lg) {
+        font-size: 16px;
+      }
+    }
+
+    .date,
+    .description {
+      font-size: 10px;
+      text-overflow: ellipsis;
+    }
+
+    .description {
+      height: 40px;
+      overflow: hidden;
+    }
+
+    hr {
+      display: block;
+      border: none;
+      color: white;
+      height: 1px;
+      background: #666666;
+      background: -webkit-gradient(
+        radial,
+        50% 50%,
+        0,
+        50% 50%,
+        350,
+        from(#ddd),
+        to(#fff)
+      );
+      margin: 7px 0;
+    }
+  }
+
+  .avatar {
+    width: 120px;
+    height: 119px;
+    background-color: #f9f9f9;
+
+    @media (max-width: @screen-sm) {
+      width: 100px;
+      height: 100px;
+    }
+
+    img[src^='/static/icons/username'] {
+      width: 66% !important;
+      height: 100% !important;
+      margin: 0 17% !important;
+    }
+  }
+}
+
+.message {
+  font-size: 14px;
+  border-bottom: 1px solid #898c88;
+  cursor: pointer;
+
+  .avatar {
+  }
+  .bottom15 {
+    margin-bottom: 15px;
+  }
+  .top15 {
+    margin-top: 15px;
+  }
+  .name {
+  }
+  .date {
+  }
+  .text {
+    margin-top: -30px;
+  }
+
+  .price {
+    font-size: 1.3rem;
+  }
+}
+
+.msg-unread {
+  color: #b9582d;
+}
+
+.msg-read {
+  color: #898c88;
+}
+
+.new-badge {
+  position: absolute;
+  top: 77px;
+  left: 0px;
+  width: 64px;
+  height: 37px;
+  background-image: url('../../../static/icons/new-badge.svg');
+  background-repeat: no-repeat;
+}

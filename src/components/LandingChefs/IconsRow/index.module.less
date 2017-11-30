@@ -1,0 +1,118 @@
+@import (reference) '../share.module.less';
+
+.max-width(@width, @when) {
+  @media (min-width: @when) {
+    width: @width;
+  }
+}
+
+@range-lg: ~'(min-width: @{screen-lg}) and (max-width:' (@screen-xlg - 1) ~')';
+@range-md-xlg: ~'(min-width: @{screen-md}) and (max-width:' (@screen-xlg - 1) ~')';
+
+.component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+
+  margin: 110px 90px 130px;
+
+  .max-width(1173px, @screen-wide);
+
+  @media @range-md {
+    margin: 110px 60px 130px;
+  }
+  @media @range-to-md {
+    flex-direction: column;
+    margin: 0 20px 60px;
+  }
+}
+
+.wrap {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 110px;
+}
+
+.icon {
+  background-size: cover;
+  height: 110px;
+}
+
+.chef {
+  width: 118px;
+}
+
+.guest {
+  width: 94px;
+}
+
+.money {
+  width: 110px;
+}
+
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  @media @range-to-md {
+    margin-top: 70px;
+  }
+
+  @media (min-width: @screen-md) {
+    & + & {
+      margin-left: 1em;
+    }
+  }
+  @media (min-width: @screen-xlg) {
+    &:nth-child(1) {
+      flex-shrink: 6;
+    }
+    &:nth-child(2) {
+      flex-shrink: 6;
+    }
+    &:nth-child(3) {
+      flex-shrink: 0;
+    }
+  }
+  @media @range-md-xlg {
+    &:nth-child(1) {
+      .block-head {
+        max-width: 180px;
+      }
+    }
+    &:nth-child(2) {
+      .block-head {
+        max-width: 180px;
+      }
+    }
+  }
+}
+
+.block-head {
+  .font(26px);
+  line-height: 32px;
+  color: @text-color;
+
+  margin-top: 60px;
+  @media @range-to-md {
+    margin-top: 30px;
+  }
+}
+
+.text {
+  .font();
+  line-height: 23px;
+  color: @text-color;
+
+  max-width: 350px;
+  margin-top: 20px;
+
+  @media @range-to-md {
+    max-width: 450px;
+  }
+}

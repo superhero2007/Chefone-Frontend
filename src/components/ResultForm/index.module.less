@@ -1,0 +1,139 @@
+@import (reference) './../../../styles/colors.less';
+@import (reference) './../../../styles/variables.less';
+
+@headerColor: #c95c27;
+@screen-sm: 576px;
+@messageColor: #a7a8a9;
+
+.result-form {
+  padding: 100px 0;
+  background-color: @wild_sand;
+  font-family: Montserrat-Light;
+
+  @media (max-width: @screen-sm) {
+    padding: 40px 20px;
+  }
+
+  h3,
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 32px;
+    color: #555555;
+    margin: 60px 0 30px;
+
+    @media (max-width: @screen-sm) {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  h5 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #555555;
+    margin: auto;
+    max-width: 600px;
+
+    @media (max-width: @screen-sm) {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    &.fail {
+      text-align: center;
+    }
+  }
+
+  hr {
+    box-sizing: border-box;
+    width: 600px;
+    height: 2.4px;
+    border: 1px solid #cacaca;
+    margin: 30px auto;
+
+    @media (max-width: @screen-sm) {
+      width: 100%;
+    }
+  }
+
+  .btn {
+    width: 380px;
+    height: 50px;
+    background-color: #ce5100;
+    box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+    border-radius: 3px;
+
+    @media (max-width: @screen-sm) {
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: #ce5100;
+    }
+  }
+}
+
+.image {
+  background-size: cover;
+  max-width: 236px;
+  height: 236px;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 32px;
+  width: 100px;
+  height: 111px;
+
+  @media (max-width: @screen-sm) {
+    max-width: 80px;
+    height: 80px;
+  }
+
+  &-fail {
+    background-image: url('../../../static/payment-result/chef-fail.svg');
+  }
+
+  &-success {
+    background-image: url('../../../static/payment-result/chef.svg');
+  }
+}
+
+.loader {
+  padding: 70px 0 0;
+  font-family: Montserrat-Light;
+
+  img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .text1 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: @text-color;
+    text-align: center;
+  }
+
+  .text2 {
+    font-size: 16px;
+    margin-top: 0;
+    color: @text-color;
+    text-align: center;
+  }
+}

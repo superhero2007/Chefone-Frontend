@@ -1,0 +1,261 @@
+@import (reference) '../../../styles/colors';
+@import (reference) '../../../styles/variables';
+
+@bright: #ffffff;
+@gray: #7f7f7f;
+@pad: 30px;
+
+@screen-md-plus: 820px;
+
+.font(@size: 16px) {
+  font-family: Montserrat-Light;
+  font-size: @size;
+}
+
+.fill(@color, @text: @bright) {
+  color: @text;
+  background-color: @color;
+  border-color: transparent;
+}
+
+.outline(@color) {
+  color: @color;
+  background-color: @bright;
+  border: 1.3px solid @color;
+}
+
+.flex-row(@cols) {
+  display: flex;
+  flex-direction: row;
+  & > * {
+    width: (100% / @cols);
+  }
+  & > * + * {
+    padding-left: @pad;
+  }
+  @media (max-width: @screen-lg) {
+    flex-direction: column;
+    & > * {
+      width: 100%;
+    }
+    & > * + * {
+      padding-left: 0;
+      padding-top: @pad;
+    }
+  }
+}
+
+.two-cols {
+  .flex-row(2);
+}
+
+.button {
+  .font();
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  padding: 16px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 19px;
+  user-select: none;
+  border-color: currentColor;
+
+  &-pressed {
+    color: @brand-primary !important;
+  }
+}
+
+.panel-base {
+  max-width: 1180px;
+  background-color: @bright;
+  box-shadow: 0 2px 4px 0 rgba(155, 155, 155, 0.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: @pad @pad 40px @pad;
+  // @media (max-width: 770px) {
+  //   margin: 40px 0 0;
+  // }
+  & > * + * {
+    margin-top: @pad;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  .label {
+    .font();
+    line-height: 19px;
+    color: @text-color;
+    margin-bottom: 15px;
+  }
+  // &-row {
+  //   // display: flex;
+  //   // flex-direction: row;
+  //   & > * + * {
+  //     padding-left: @pad;
+  //   }
+  // }
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  .header {
+    .font(18px);
+    line-height: 21px;
+    color: @text-color;
+  }
+  .subheader {
+    .font(14px);
+    line-height: 19px;
+    color: @gray;
+    margin-top: 4px;
+  }
+}
+
+.input {
+  .font();
+  padding: 14px 18px !important;
+  input&,
+  select& {
+    height: 50px;
+  }
+  // textarea& {
+  //   padding: 14px 18px;
+  // }
+}
+
+// LAYOUT
+
+.layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+  padding: 90px 130px 0 130px;
+  justify-content: center;
+  width: 100%;
+  & > * + * {
+    margin-left: @pad;
+  }
+  @media (max-width: @screen-xlg) {
+    padding: @pad @pad 0 @pad;
+  }
+  @media (max-width: @screen-md) {
+    flex-direction: column;
+    & > * + * {
+      margin-top: @pad;
+      margin-left: 0;
+    }
+  }
+  @media (max-width: @screen-sm) {
+    padding: 0;
+  }
+}
+
+// PUBLIC
+
+.public {
+  .panel-base;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.upload {
+  .outline(@brand-primary);
+  width: 170px;
+  margin-left: 2em;
+  @media (max-width: @screen-md-plus) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: @pad;
+  }
+}
+
+.diet {
+  width: 50%;
+  &-dropdown {
+    display: flex;
+    width: 100%;
+  }
+  @media (max-width: @screen-lg) {
+    width: 100%;
+  }
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.upload-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: @screen-md-plus) {
+    flex-direction: column;
+  }
+}
+
+// PRIVATE
+
+.private {
+  .panel-base;
+  width: 360px;
+  height: 550px;
+  @media (max-width: @screen-md) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.change-pass {
+  .fill(@brand-primary);
+  width: 100%;
+}
+
+.delete-acc {
+  .fill(@bright, @brand-primary);
+  .font(18px);
+  box-shadow: 0 0 0 0;
+  width: 100%;
+}
+
+.row-pad {
+  margin-top: 10px;
+}
+
+// BOTTOM
+
+.update {
+  &-button {
+    .fill(@brand-primary);
+    width: 100%;
+  }
+  display: flex;
+  width: 380px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  @media (max-width: @screen-md) {
+    width: 100%;
+    padding-left: (@pad*2);
+    padding-right: (@pad*2);
+  }
+  @media (max-width: @screen-sm) {
+    padding-left: @pad;
+    padding-right: @pad;
+  }
+}

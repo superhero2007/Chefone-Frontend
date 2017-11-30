@@ -1,0 +1,39 @@
+@import (reference) '../../../../../styles/variables';
+
+.categories {
+  width: 200px;
+  margin: 0px auto;
+
+  @media (max-width: @screen-lg) {
+    width: 160px;
+  }
+
+  & > div {
+    display: inline-block;
+    width: 100px;
+
+    @media (max-width: @screen-lg) {
+      width: 80px;
+    }
+  }
+
+  .category {
+    display: inline-block;
+    box-shadow: rgb(102, 102, 102) 0px 1px 5px;
+    height: 35px;
+    width: 60px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:first-child {
+      background-size: 38%;
+      background-position: center 40%;
+    }
+
+    &:nth-child(2) {
+      background-size: 63%;
+      background-position: center 60%;
+    }
+  }
+}

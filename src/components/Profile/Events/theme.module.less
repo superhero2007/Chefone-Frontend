@@ -1,0 +1,129 @@
+@import (reference) '../../../../styles/variables';
+@import (reference) '../index.module.less';
+
+@left: 550;
+
+@col-lg: (@left + @screen-lg + 30);
+@col-large: (@left + 1210px);
+@col-middle: (@left + 760px);
+@col-md: (@left + @screen-md);
+@col-sm: (@left + @screen-sm);
+
+.block {
+  display: flex;
+  @media (max-width: @switch-col) {
+    width: 100%;
+  }
+}
+.card-row {
+  display: flex;
+  flex-grow: 5;
+}
+.event-date {
+  display: flex;
+  width: inherit;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+
+.card-block {
+  display: flex;
+  width: inherit;
+  flex-shrink: 1;
+  flex-grow: 0;
+}
+
+.title {
+  max-width: 220px;
+  @media (max-width: @col-lg) {
+    max-width: 150px;
+  }
+  @media (max-width: @switch-col) {
+    max-width: initial;
+  }
+  @media (max-width: 500px) {
+    max-width: 300px;
+  }
+  @media (max-width: 400px) {
+    max-width: 200px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  @media (max-width: @col-lg) {
+    height: 380px;
+  }
+}
+
+.time-and-city {
+  @media (max-width: @col-large) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+  }
+
+  @media (max-width: @col-lg) {
+    font-size: 11px;
+  }
+
+  @media (max-width: @col-middle) {
+    font-size: 14px;
+    width: auto;
+  }
+}
+
+.action-buttons {
+  @media (max-width: @col-lg) {
+    margin: 19px 12px;
+  }
+
+  @media (max-width: @col-md) {
+    margin: 19px;
+  }
+
+  button {
+    @media (max-width: @col-lg) {
+      margin-left: 10px !important;
+      width: 15px !important;
+      height: 17px !important;
+      background-size: 100% !important;
+    }
+
+    @media (max-width: @col-middle) {
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+    }
+
+    @media (max-width: @switch-col) {
+      margin-left: 20px !important;
+      width: 20px !important;
+      height: 20px !important;
+      background-size: contain !important;
+    }
+  }
+}
+
+.image-container {
+  @media (max-width: @col-lg) {
+    height: 220px;
+  }
+}
+
+.events-col-blocks {
+  display: flex;
+  @media (max-width: @switch-col) {
+    width: 100%;
+  }
+}

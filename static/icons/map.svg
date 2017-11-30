@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="42px" height="59px" viewBox="0 0 42 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>map</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Discover-Page-1" transform="translate(-699.000000, -145.000000)" stroke="#FFFFFF" stroke-width="3">
+            <g id="Header" transform="translate(0.000000, 60.000000)">
+                <path d="M737.453562,98.617875 C734.808562,92.407875 728.940687,87.8093125 721.927125,87.117875 C721.237125,87 720.663563,87 719.973562,87 C718.02,87 716.065,87.347875 714.335687,87.8093125 C708.933562,89.42075 704.677125,93.4414375 702.493563,98.617875 C701.572125,100.92075 701,103.447875 701,105.979312 C701,115.177875 708.585687,120.927875 713.19,126.56575 C718.132125,132.657875 719.973562,138.407875 719.973562,138.407875 C719.973562,138.407875 721.927125,132.657875 726.757125,126.56575 C731.361437,120.81575 738.947125,115.177875 738.947125,105.979312 C738.947125,103.447875 738.487125,100.92075 737.453562,98.617875 Z" id="map"></path>
+            </g>
+        </g>
+    </g>
+</svg>

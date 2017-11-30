@@ -1,0 +1,24 @@
+@import (reference) '../../../../styles/variables';
+
+.component {
+  position: fixed;
+  width: 101%;
+  height: 100%;
+  z-index: 9000;
+  top: 0;
+  background-color: white;
+}
+
+.form {
+  @media (min-width: @screen-sm) {
+    min-width: 500px;
+  }
+}
+
+.image {
+  background-image: url('../../../../static/login-background.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-basis: auto;
+  flex-grow: 1;
+}

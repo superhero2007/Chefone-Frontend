@@ -1,0 +1,112 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.content {
+  padding-top: 50px;
+}
+
+.without-events {
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #555555;
+  }
+
+  p {
+    margin: 0;
+    margin: 17px 20px 0;
+    font-size: 22px;
+    line-height: 27px;
+    max-width: 1124px;
+    color: #555555;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .more-info {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    color: white;
+    height: 50px;
+    background-color: #3ec197;
+    font-family: Montserrat-Light;
+    font-size: 16px;
+    border: none;
+    margin: 25px auto 0px;
+
+    border-radius: 4px;
+  }
+}
+
+.container {
+  padding-bottom: 20px;
+  background-color: #f3f3f3;
+  text-align: center;
+
+  h2 {
+    margin-top: 68px;
+    margin-bottom: 68px;
+  }
+
+  hr {
+    box-sizing: border-box;
+    height: 2px;
+    border: 1px solid #cacaca;
+  }
+}
+
+.city-name {
+  font-size: 50px;
+  font-weight: bold;
+
+  @media (max-width: @screen-sm) {
+    font-size: 20px;
+  }
+}
+
+.section-header {
+  font-family: Montserrat-Light;
+  margin-bottom: 30px;
+  @media (max-width: @screen-sm) {
+    font-size: 20px;
+  }
+}
+
+.more-btn-wrapper {
+  margin: 80px 0;
+  overflow: hidden;
+  height: 60px;
+}
+
+.more-btn {
+  outline: 0;
+  width: 200px;
+  height: 60px;
+  box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+  border: 1.5px solid @brand-primary;
+  border-radius: 4px;
+  background: transparent;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 24px;
+  color: @brand-primary;
+
+  span {
+    margin: 10px;
+    display: inline-block;
+  }
+}
+
+.newsletter-separator {
+  width: 100%;
+  @media (min-width: @screen-md) {
+    margin-top: 81px;
+  }
+}

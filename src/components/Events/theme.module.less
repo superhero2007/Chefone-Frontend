@@ -1,0 +1,66 @@
+@import (reference) '../../../styles/variables';
+
+.event-date {
+  display: block;
+}
+.event-details {
+  display: block;
+}
+.title {
+  display: block;
+}
+
+.card {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.time-and-city {
+  @media (max-width: 1210px) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 170px;
+  }
+
+  @media (max-width: @screen-lg) {
+    width: 120px;
+    font-size: 11px;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 14px;
+    width: auto;
+  }
+}
+
+.action-buttons {
+  @media (max-width: @screen-lg) {
+    margin: 19px 12px !important;
+  }
+
+  // @media (max-width: @screen-md) {
+  //   margin: 19px 19px 19px 0!important;
+  // }
+
+  button {
+    @media (max-width: @screen-lg) {
+      margin-left: 10px !important;
+      width: 15px !important;
+      height: 17px !important;
+      background-size: 100% !important;
+    }
+
+    @media (max-width: 760px) {
+      margin-left: 20px !important;
+      width: 20px !important;
+      height: 20px !important;
+      background-size: contain !important;
+    }
+  }
+}
+
+.image-container {
+  @media (max-width: @screen-lg) {
+    height: 220px;
+  }
+}

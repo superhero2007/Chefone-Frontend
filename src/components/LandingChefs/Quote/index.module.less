@@ -1,0 +1,116 @@
+@import (reference) '../share.module.less';
+
+@range-lg-wide: ~'(min-width: @{screen-lg}) and (max-width: ' (@screen-wide - 1)
+  ~')';
+
+.banner {
+  position: relative;
+  background-image: url('../../../../static/landing-chefs/content.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  // @media @range-md, @range-lg-wide {
+  //   background-size: contain;
+  // }
+  @media @range-to-md {
+    background-image: url('../../../../static/landing-chefs/mobile/content.jpg');
+  }
+}
+
+.component {
+  .align-center;
+  .banner;
+  width: 100%;
+
+  @media @range-to-md {
+    align-items: center;
+  }
+}
+
+.panel {
+  background-color: rgba(255, 255, 255, 0.95);
+
+  @pad: 180px;
+  margin-left: 130px;
+  margin-top: @pad;
+  margin-bottom: @pad;
+
+  background-image: url(../../../../static/landing-chefs/left-quote.png);
+  background-repeat: no-repeat;
+  background-position-x: 8%;
+  background-position-y: 20%;
+
+  @media @range-md, (min-width: @screen-lg) {
+    width: 660px;
+    height: 300px;
+  }
+
+  @media @range-lg-wide {
+    margin-top: 12.5%;
+    margin-bottom: 12.5%;
+  }
+  @media @range-to-sm {
+    margin: 115px 20px;
+    padding: 40px 30px;
+    background-position-y: 5%;
+  }
+  @media @range-sm, @range-md {
+    margin: 115px 30px;
+  }
+  padding: 60px 40px 50px 60px;
+}
+
+.quote {
+  .font();
+  line-height: 23px;
+
+  text-align: center;
+
+  color: @text-color;
+  display: flex;
+
+  @media @range-to-sm {
+    text-align: left;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.chef-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.avatar {
+  display: flex;
+  flex-shrink: 1;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px 0;
+  margin-left: 8px;
+}
+
+.name {
+  font-size: 16px;
+  font-family: Montserrat-Regular;
+  line-height: 19px;
+  color: @text-color;
+
+  display: flex;
+}
+
+.about {
+  .font(14px);
+  line-height: 18px;
+  color: @text-color;
+
+  display: flex;
+}

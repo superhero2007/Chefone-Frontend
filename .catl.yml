@@ -1,0 +1,49 @@
+ci:
+  steps:
+    provide:
+      - aws_eb
+      - aws
+      - docker
+      - circleci
+    verify:
+      - aws_eb
+      - aws
+      - docker
+      - circleci
+    decrypt:
+      - circleci
+    setGitEnv:
+      - circleci
+    setEnvironment:
+      - ssh
+      - aws
+      - docker
+    getReleases:
+      - docker
+    getServices:
+      - dockerSwarm
+      - aws_eb
+    gcReleases:
+      - docker
+    gcServices:
+      - dockerSwarm
+      - aws_eb
+    generateFiles:
+      - npm
+    initCache:
+      - npm
+    loadCache:
+      - npm
+    install:
+      - npm
+    saveCache:
+      - npm
+    prepare:
+      - docker
+    publish:
+      - docker
+    publishNotes:
+      - github
+    deploy:
+      - dockerSwarm
+      - aws_eb

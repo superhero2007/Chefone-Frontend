@@ -1,0 +1,15 @@
+FROM node:8.2.1-alpine
+
+RUN apk add --update-cache bash
+
+COPY ./package.json /app/package.json
+COPY ./package-lock.json /app/package-lock.json
+
+RUN cd app && npm install --production
+
+COPY ./dist/build/ /app
+
+WORKDIR /app
+
+EXPOSE 3000
+CMD npm run start-prod

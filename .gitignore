@@ -1,0 +1,27 @@
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+# -*- mode: gitignore; -*-
+# Elastic Beanstalk Files
+*.DS_Store
+.elasticbeanstalk/*
+.happypack
+.idea
+.tmp
+.vscode
+build
+buildt
+dist
+flow-coverage
+host.env
+ignore
+node_modules
+npm-debug.log
+secret_environment.*
+secrets.tar
+sitemap.xml
+src/server/build
+sshkey.env
+stats.json
+tmp
+vendor.json
+webpack-assets.json

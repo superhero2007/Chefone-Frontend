@@ -1,0 +1,607 @@
+//$enable-flex: true!default;
+//
+//$input-border-focus: $brand-primary;
+.cc-window {
+  z-index: 99999999999999999999 !important;
+}
+
+.no-hor-padding {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../font/Montserrat-Bold.woff') format('woff'),
+    url('../font/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../font/Montserrat-Light.woff') format('woff'),
+    url('../font/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-UltraLight';
+  src: url('../font/Montserrat-UltraLight.woff') format('woff'),
+    url('../font/Montserrat-UltraLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'IndieFlower';
+  src: url('../font/IndieFlower.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../font/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@import './colors.less';
+@import './variables';
+
+@media only screen and (max-width: @screen-xs) {
+  .container {
+    width: 100% !important;
+    padding: 5px !important;
+  }
+}
+
+@media only screen and (min-width: @screen-xs) {
+  .container {
+    width: 480px !important;
+  }
+}
+
+@media only screen and (min-width: @screen-sm) {
+  .container {
+    width: 710px !important;
+  }
+}
+
+@media only screen and (min-width: @screen-md) {
+  .container {
+    width: 930px !important;
+  }
+}
+
+@media only screen and (min-width: @screen-lg) {
+  .container {
+    width: 930px !important;
+  }
+}
+
+@media only screen and (min-width: @screen-xlg) {
+  .container {
+    width: 1210px !important;
+  }
+}
+
+:root {
+  --xs-min: 30;
+  --sm-min: 48;
+  --md-min: 62;
+  --lg-min: 75;
+}
+
+.col-xs-0,
+.hide-xs,
+.hide-mobile {
+  @media only screen and (max-width: @screen-sm) {
+    display: none !important;
+  }
+}
+
+.col-sm-0,
+.hide-sm,
+.hide-mobile {
+  @media only screen and (min-width: @screen-sm) and (max-width: @screen-md) {
+    display: none !important;
+  }
+}
+
+.col-md-0,
+.hide-desktop {
+  @media only screen and (min-width: @screen-md) and (max-width: @screen-lg) {
+    display: none !important;
+  }
+}
+
+.col-lg-0,
+.hide-desktop {
+  @media only screen and (min-width: @screen-lg) {
+    display: none !important;
+  }
+}
+
+@import './z-index';
+
+.icon-create-orange {
+  width: 20.9px;
+  height: 20.9px;
+  margin-left: 3px;
+  margin-top: -11px;
+  background-size: cover;
+  background-image: url('../static/icons/icons_create_orange.svg');
+}
+
+.icon-money-orange {
+  width: 21px;
+  height: 21px;
+  margin-top: -10px;
+  margin-left: 3px;
+  background-size: contain;
+  background-image: url('../static/icons/money_orange.svg');
+}
+
+.icon-blog-orange {
+  width: 23px;
+  height: 15px;
+  margin-top: -9px;
+  background-size: cover;
+  background-image: url('../static/icons/icons_blog_orange.svg');
+}
+
+.icon-help-orange {
+  width: 20.9px;
+  height: 20.9px;
+  margin-left: 3px;
+  margin-top: -11px;
+  background-size: cover;
+  background-image: url('../static/icons/icons_help_orange.svg');
+}
+
+.icon-help {
+  background-image: url('../static/icons/icons_help.svg');
+}
+
+.icon-inbox {
+  background-image: url('../static/icons/icons_inbox.svg');
+}
+
+.icon-arrow-right {
+  width: 8.44px;
+  height: 10.78px;
+  margin-top: -5px;
+  background: url('../static/icons/arrow_right.svg') no-repeat;
+}
+
+.icon-arrow-left {
+  width: 8.44px;
+  height: 10.78px;
+  margin-top: -5px;
+  background: url('../static/icons/arrow_left.svg') no-repeat;
+}
+
+.icon-home-orange {
+  width: 26.44px;
+  height: 20.78px;
+  margin-top: -14px;
+  background: url('../static/icons/home_orange.svg') no-repeat;
+}
+
+.icon-inbox-white {
+  background-image: url('../static/icons/icons_inbox_white.svg');
+}
+
+.icon_help_white {
+  background-image: url('../static/icons/icons_help_white.svg');
+}
+
+.icon_header-close_white {
+  background-image: url('../static/icons/icons_header-close_white.svg');
+}
+
+.icon-event {
+  background-image: url('../static/icons/icons_event.svg');
+}
+
+.icon-profile {
+  width: 20.9px;
+  height: 20.9px;
+  margin-left: 3px;
+  margin-top: -11px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url('../static/icons/profile.svg');
+}
+
+.icon-profile-mobile {
+  .icon-profile;
+}
+
+.icon-social {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.icon-social-email {
+  .icon-social;
+  background-image: url('../static/icons/icon_social_email.svg');
+}
+
+.icon-social-fb {
+  .icon-social;
+  background-image: url('../static/icons/icon_social_fb.svg');
+}
+
+.icon-social-fb-msg {
+  .icon-social;
+  background-image: url('../static/icons/icon_social_fb_msg.svg');
+}
+
+.icon-social-whats-up {
+  .icon-social;
+  background-image: url('../static/icons/icon_social_whats_up.svg');
+}
+
+.icon-event-white {
+  background-image: url('../static/icons/icons_event_white.svg');
+}
+
+.icon-username {
+  background-image: url('../static/icons/icons_username.svg');
+}
+
+.icon-message-orange {
+  width: 26.44px;
+  height: 20.78px;
+  margin-top: -11px;
+  background: url('../static/icons/message-orange.svg') no-repeat;
+}
+
+.icon-dashboard {
+  width: 26.44px;
+  height: 20.78px;
+  margin-left: 9px;
+  margin-top: -11px;
+  background: url('../static/icons/knife-fork.svg') no-repeat;
+}
+
+.icon-city {
+  margin-left: 6px;
+  width: 17.44px;
+  height: 22.78px;
+  margin-bottom: -5px;
+  background: url('../static/icons/home_orange.svg') no-repeat;
+  background-color: transparent;
+}
+
+.modal {
+  z-index: @z-index-modal !important;
+}
+
+.navbar .menu-sm .dropdown__content {
+  position: absolute !important;
+  margin-right: -4px;
+}
+
+p,
+textarea,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  white-space: pre-line;
+  font-family: Montserrat-Light;
+}
+
+p,
+textarea {
+  color: @brand-gray;
+}
+
+.star {
+  vertical-align: top;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+
+.toggled-star {
+  background-image: url('../static/icons/star_red.svg');
+}
+
+.untoggled-star {
+  background-image: url('../static/icons/star_grey.svg');
+}
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+@import 'newsletter.less';
+
+@import './variables.less';
+@import '../node_modules/bootstrap/less/mixins.less';
+
+// Reset and dependencies
+@import '../node_modules/bootstrap/less/normalize.less';
+@import '../node_modules/bootstrap/less/print.less';
+//@import "../node_modules/bootstrap/less/glyphicons.less";
+
+// Core CSS
+@import '../node_modules/bootstrap/less/scaffolding.less';
+@import '../node_modules/bootstrap/less/type.less';
+//@import "../node_modules/bootstrap/less/code.less";
+// @import "../node_modules/bootstrap/less/grid.less";
+
+@import '../node_modules/bootstrap/less/tables.less';
+@import '../node_modules/bootstrap/less/forms.less';
+@import '../node_modules/bootstrap/less/buttons.less';
+
+// Components
+@import '../node_modules/bootstrap/less/component-animations.less';
+//@import "../node_modules/bootstrap/less/dropdowns.less";
+//@import "../node_modules/bootstrap/less/button-groups.less";
+//@import "../node_modules/bootstrap/less/input-groups.less";
+//@import "../node_modules/bootstrap/less/navs.less";
+//@import "../node_modules/bootstrap/less/navbar.less";
+//@import "../node_modules/bootstrap/less/breadcrumbs.less";
+//@import "../node_modules/bootstrap/less/pagination.less";
+//@import "../node_modules/bootstrap/less/pager.less";
+//@import "../node_modules/bootstrap/less/labels.less";
+//@import "../node_modules/bootstrap/less/badges.less";
+//@import "../node_modules/bootstrap/less/jumbotron.less";
+@import '../node_modules/bootstrap/less/thumbnails.less';
+//@import "../node_modules/bootstrap/less/alerts.less";
+//@import "../node_modules/bootstrap/less/progress-bars.less";
+@import '../node_modules/bootstrap/less/media.less';
+//@import "../node_modules/bootstrap/less/list-group.less";
+//@import "../node_modules/bootstrap/less/panels.less";
+@import '../node_modules/bootstrap/less/responsive-embed.less';
+//@import "../node_modules/bootstrap/less/wells.less";
+//@import "../node_modules/bootstrap/less/close.less";
+
+// Components w/ JavaScript
+@import '../node_modules/bootstrap/less/modals.less';
+//@import "../node_modules/bootstrap/less/tooltip.less";
+//@import "../node_modules/bootstrap/less/popovers.less";
+//@import "../node_modules/bootstrap/less/carousel.less";
+
+// Utility classes
+@import '../node_modules/bootstrap/less/utilities.less';
+@import '../node_modules/bootstrap/less/responsive-utilities.less';
+
+@font-size-base: 16px;
+@brand-gray: @BRAND_GRAY;
+@input-border-focus: @BRAND_PRIMARY;
+
+html {
+  overflow-x: hidden;
+}
+
+.bg-inverse {
+  background-color: #999;
+}
+
+.bg-faded {
+  background-color: #e9e9e9;
+}
+
+button.chefone {
+  background-color: @brand-primary !important;
+  color: white !important;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+button.chefone-success {
+  background-color: @brand-success !important;
+  color: white !important;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.bg-facebook {
+  background-color: @facebook;
+}
+
+.btn-secondary {
+  background-color: @brand-gray;
+  color: white;
+}
+
+.btn-secondary-outline {
+  color: #ccc;
+  background-image: none;
+  background-color: transparent;
+  border-color: #ccc;
+}
+
+.text-success {
+  color: @brand-success;
+}
+
+.btn-success {
+  border: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
+.alert {
+  margin: 1rem 0;
+}
+
+/*::-webkit-scrollbar {*/
+/*height: 16px;*/
+/*overflow: visible;*/
+/*width: 16px;*/
+/*}*/
+
+/*::-webkit-scrollbar-thumb {*/
+/*background-color: rgba(0,0,0,.2);*/
+/*background-clip: padding-box;*/
+/*border: solid transparent;*/
+/*border-width: 0 0 0 7px;*/
+/*min-height: 28px;*/
+/*padding: 100px 0 0;*/
+/*box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);*/
+/*}*/
+
+/*::-webkit-scrollbar-track {*/
+/*background-clip: padding-box;*/
+/*border: solid transparent;*/
+/*border-width: 0 0 0 7px;*/
+/*}*/
+
+body {
+  font-family: Montserrat;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: @brand-primary;
+}
+
+p {
+  font-size: 0.95em;
+}
+
+blockquote {
+  position: relative;
+  padding: 3rem 0;
+  quotes: '“' '”';
+  font-size: 0.95em;
+  border: none;
+}
+
+blockquote:before {
+  color: #7c7c7c;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+blockquote:after {
+  color: #7c7c7c;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.logo-long {
+  background-image: url('../static/logo-chef-one.svg');
+  background-repeat: no-repeat;
+}
+
+.account-state-enter {
+  opacity: 0.1;
+}
+
+.account-state-enter.account-state-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.account-state-leave {
+  display: none;
+}
+
+//.navbar-nav > li > span > a:extend(.navbar-nav > li > a, .nav > li > a) {}
+
+.hide-sm {
+  @media (max-width: @screen-md) {
+    display: none !important;
+  }
+}
+
+.hide-mobile {
+  @media (max-width: @screen-sm) {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: @screen-md) {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-selection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+footer {
+  select {
+    -moz-appearance: none;
+  }
+
+  .social-row {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+
+    @media (max-width: @screen-md) {
+      width: 150px;
+    }
+
+    .social-container {
+      position: relative;
+
+      .social-block {
+        position: absolute;
+        top: 0;
+
+        &:nth-child(1) {
+          left: 0;
+        }
+
+        &:nth-child(2) {
+          left: 50%;
+          margin-left: -15px;
+        }
+
+        &:nth-child(3) {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+input[type='checkbox'] {
+  outline: none;
+}
+
+@import 'loader';

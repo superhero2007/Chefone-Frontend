@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navbar" transform="translate(-286.000000, -18.000000)" fill="#CE5100">
+            <g id="NAVBAR">
+                <g id="menu" transform="translate(285.000000, 18.000000)">
+                    <g id="Capa_1">
+                        <g id="Group">
+                            <path d="M-0.396226415,7.35849057 L14.3962264,7.35849057 C14.7295094,7.35849057 15,7.088 15,6.75471698 C15,6.42143396 14.7295094,6.1509434 14.3962264,6.1509434 L-0.396226415,6.1509434 C-0.729509434,6.1509434 -1,6.42143396 -1,6.75471698 C-1,7.088 -0.729509434,7.35849057 -0.396226415,7.35849057 Z" id="Shape" transform="translate(7.000000, 6.754717) rotate(-315.000000) translate(-7.000000, -6.754717) "></path>
+                            <path d="M-0.396226415,7.41509434 L14.3962264,7.41509434 C14.7295094,7.41509434 15,7.14460377 15,6.81132075 C15,6.47803774 14.7295094,6.20754717 14.3962264,6.20754717 L-0.396226415,6.20754717 C-0.729509434,6.20754717 -1,6.47803774 -1,6.81132075 C-1,7.14460377 -0.729509434,7.41509434 -0.396226415,7.41509434 Z" id="Shape" transform="translate(7.000000, 6.811321) rotate(-45.000000) translate(-7.000000, -6.811321) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

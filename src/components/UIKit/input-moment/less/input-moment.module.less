@@ -1,0 +1,80 @@
+@import (reference) 'variables.module.less';
+@import (reference) '../../../../../styles/colors.less';
+
+.im-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  line-height: 1;
+
+  &:before {
+    margin-right: 6px;
+  }
+}
+
+.im-btn.btn-save {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  background-color: @brand-primary;
+  padding: 12px 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.m-input-moment {
+  display: inline-block;
+  width: 330px;
+  padding: 12px 15px;
+  border-radius: 3px;
+  border: 1px solid @color-gray;
+
+  .options {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4px;
+
+    button {
+      float: left;
+      width: 50%;
+      color: @brand-primary;
+      text-align: center;
+      font-size: 16px;
+      padding: 7px;
+      border: 1px solid @brand-primary;
+      border-radius: 3px;
+
+      &:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &.is-active {
+        color: #ffffff;
+        background-color: @brand-primary;
+      }
+    }
+  }
+
+  .tab {
+    display: none;
+    height: 310px;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  .tabs {
+    margin-bottom: 11px;
+  }
+}

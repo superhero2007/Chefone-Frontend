@@ -1,0 +1,335 @@
+@import (reference) '../share.module.less';
+
+@sub-lg: 770px;
+
+.panel {
+  display: flex;
+  background-color: @bright;
+  border-radius: 4px;
+}
+
+@pad: 15px;
+
+.title {
+  .bold {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 38px;
+    line-height: 47px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+
+    text-align: center;
+    margin-top: (92px-30px);
+    @media @range-to-sm {
+      line-height: 28px;
+      font-size: 20px;
+      text-align: left;
+      margin-top: 50px;
+    }
+  }
+  .sub {
+    .font(24px);
+    line-height: 29px;
+    margin-top: @pad;
+    @media @range-to-sm {
+      margin-top: 10px;
+
+      line-height: 22px;
+      font-size: 18px;
+    }
+  }
+  text-align: center;
+  margin: auto;
+  color: @bright;
+
+  @media (max-width: @screen-lg) {
+    max-width: 691px;
+  }
+
+  @media @range-to-sm {
+    text-align: left;
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.join-see-more {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  @media @range-to-sm {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+.see-more {
+  color: @bright;
+  .font();
+  line-height: 19px;
+  margin-top: 10px;
+  cursor: pointer;
+  @media @range-to-sm {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &:hover {
+    color: @bright;
+  }
+}
+
+.create-button {
+  margin-right: @pad;
+  margin-left: (@pad*2);
+  flex-grow: 2;
+  .fill(@green);
+  .font();
+
+  @media (max-width: @sub-lg) {
+    margin: 11px 0 !important;
+    width: 77% !important;
+    height: 40px !important;
+    padding: 10px !important;
+  }
+}
+
+.event-creator {
+  .panel;
+  align-items: center;
+
+  width: 691px;
+  height: 72px;
+  @media (max-width: 575px) {
+    width: inherit !important;
+  }
+  @media (max-width: @sub-lg) {
+    width: 503px;
+    flex-direction: column;
+    height: inherit;
+  }
+}
+
+.line {
+  box-sizing: border-box;
+  width: 2.5px;
+  height: 100%;
+  border: 1px solid #cfcfcf;
+  background-color: #cfcfcf;
+  @media (max-width: @sub-lg) {
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.dropdown {
+  flex-grow: 0;
+  width: (210px - @pad*2);
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 @pad;
+    @media (max-width: @sub-lg) {
+      margin-top: 13px;
+      margin-bottom: 10px;
+      width: inherit;
+    }
+  }
+  &-title {
+    .font(14px);
+    line-height: 18px;
+    color: @text-color;
+    margin-top: 6px;
+    @media @range-to-sm {
+      margin-top: 0;
+    }
+  }
+}
+
+.item {
+  &-default {
+    cursor: default;
+    color: #777777;
+    &:hover {
+      color: #777777;
+    }
+  }
+  &-active {
+    color: @text-color;
+    cursor: pointer;
+    &:hover {
+      color: @brand-primary;
+    }
+  }
+}
+
+.info {
+  margin-top: 41px;
+}
+
+.component {
+  height: 430px;
+  position: relative;
+  background-image: url('../../../../static/landing-chefs/cta.jpg');
+  @media @range-to-sm {
+    background-image: url('../../../../static/landing-chefs/mobile/cta.jpg');
+    padding: 0 20px 20px;
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0px 17px;
+
+  @media (max-width: @sub-lg) {
+    height: inherit;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    width: 100%;
+    .font(30px);
+    a {
+      color: white;
+    }
+
+    @media (max-width: @screen-md) {
+      font-size: 20px;
+    }
+  }
+}
+
+.container-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.become-guest {
+  @media (max-width: @screen-md) {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: @screen-md) {
+    margin-top: 0;
+  }
+  .header-image {
+    background-image: url('../../../../static/icons/icons-headder_gast-01.svg');
+  }
+  .input-container {
+    width: 300px;
+    position: relative;
+    margin: auto;
+
+    @media (max-width: @screen-md) {
+      width: 280px;
+    }
+  }
+
+  input {
+    display: block;
+    position: relative;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    width: 100%;
+    padding: 0px 5px;
+    .font(20px);
+    &::placeholder {
+      /* Chrome/Opera/Safari */
+      color: white;
+      .font(16px);
+    }
+
+    @media (max-width: @screen-md) {
+      width: 280px;
+      font-size: 14px;
+      margin-top: 20px;
+      padding: 6px;
+    }
+  }
+}
+
+.city-search {
+  position: relative;
+
+  .search-icon {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 0px;
+    background: url('../../../../static/icons/search.svg');
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 420%;
+    background-position: 50%;
+  }
+}
+
+.city-hint {
+  color: white;
+  margin: 10px 25px;
+  font-size: 14px;
+  width: 300px;
+  margin: 10px auto;
+
+  span {
+    margin-right: 5px;
+  }
+
+  a {
+    font-family: Montserrat-Light;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 9px;
+    border: 1px solid white;
+  }
+
+  @media (max-width: @screen-md) {
+    margin-top: 13px;
+    text-align: left;
+    width: 280px;
+    font-size: 14px;
+  }
+}
+
+.become-chef {
+  h3 {
+    @media (max-width: @screen-md) {
+      margin-top: 20px;
+    }
+  }
+  .header-image {
+    background-image: url('../../../../static/icons/icons-headder_koch-01.svg');
+  }
+
+  .create-event-btn {
+    display: block;
+
+    width: 219px;
+    padding: 10px 5px;
+    border-radius: 3px;
+    margin: auto;
+    color: white;
+    border: 1px solid white !important;
+    background-color: transparent;
+    text-align: center;
+    .font(20px);
+    @media (max-width: @screen-md) {
+      width: 120px;
+      font-size: 12px;
+    }
+  }
+}

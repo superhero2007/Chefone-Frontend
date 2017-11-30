@@ -1,0 +1,46 @@
+@import (reference) '../../../../styles/colors';
+@import (reference) '../../../../styles/variables';
+
+.block {
+  background-color: white;
+  box-shadow: 0 0 10px #666666;
+  border-radius: 5px;
+  padding: 20px 30px;
+  z-index: 0;
+
+  &.image-block {
+    position: relative;
+    height: 293px;
+    background-size: cover;
+    background-position: center center;
+    padding: 0;
+
+    @media (min-width: @screen-md) {
+      // z-index: -1;
+      margin-bottom: -42px;
+    }
+
+    @media (max-width: @screen-md) {
+      height: 219px;
+    }
+
+    .city-name {
+      position: absolute;
+      color: white;
+      top: 50%;
+      margin-top: -20px;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .country-name {
+      position: absolute;
+      top: 50%;
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}

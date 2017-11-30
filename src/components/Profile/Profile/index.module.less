@@ -1,0 +1,92 @@
+@import (reference) '../index.module.less';
+
+.about {
+  .font-main();
+  line-height: 25px;
+}
+
+.row-icon {
+  .font-main();
+}
+
+.row-icon + .row-icon {
+  margin-top: 0.5em;
+}
+
+.row + .row {
+  margin-top: 2em;
+}
+
+.iconpath(@name) {
+  .svg-icon(@name);
+  &-@{name} {
+    &:before {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 1em 0 0;
+    }
+  }
+}
+
+.separator {
+  height: 2.27px;
+  border: 1px solid #cacaca;
+  color: #cacaca;
+  box-sizing: border-box;
+}
+
+.icon {
+  .iconpath(briefcase);
+  .iconpath(icons-headder_gast-01-sketch);
+  .iconpath(open-book);
+}
+
+.user-info + .about {
+  margin-top: 38px;
+}
+
+.bottom-info {
+  margin: 20px auto 7px;
+}
+
+.avatar {
+  width: 83px;
+  height: 83px;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  .textblock {
+    color: @gray;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5em;
+    margin-top: 5px;
+    .name {
+      .font-main(30px);
+    }
+    .age {
+      .font(16px);
+      margin-left: 0.3em;
+    }
+    .header {
+      flex: 1 100%;
+    }
+    .sub-info {
+      margin-top: 4px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      .ui {
+        .font(12px);
+      }
+      .value {
+        font-family: Montserrat;
+        font-size: 16px;
+        color: @emperor;
+        font-weight: normal;
+      }
+    }
+  }
+}

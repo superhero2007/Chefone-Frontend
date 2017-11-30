@@ -1,0 +1,178 @@
+@import (reference) '../../../styles/variables';
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.event-card {
+  .card;
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+  // border: 1px solid #CACACA;
+  @media (max-width: @screen-sm) {
+    height: 60px;
+  }
+}
+
+.image {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  height: 25px;
+  background-color: rgba(36, 36, 36, 0.6);
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  color: #ffffff;
+  span {
+    vertical-align: sub;
+  }
+}
+
+.image-with-price {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  @media (max-width: @screen-sm) {
+    width: 60px;
+  }
+}
+
+.month-text {
+  font-size: 15px;
+  @media (max-width: @screen-sm) {
+    font-size: 13px;
+  }
+  color: #ce5100;
+}
+
+.day-text {
+  font-size: 18px;
+  @media (max-width: @screen-sm) {
+    font-size: 15px;
+  }
+  color: #555555;
+}
+
+.month-day-wrapper {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  top: 20px;
+  @media (max-width: @screen-sm) {
+    top: 10px;
+  }
+}
+
+.month-day-column {
+  background-color: white;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 62px;
+  @media (max-width: @screen-sm) {
+    width: 49px;
+  }
+}
+
+.title {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+  @media (max-width: @screen-sm) {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  color: #555555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.time-location {
+  margin-top: 5px;
+  @media (max-width: @screen-sm) {
+    font-size: 12px;
+  }
+  font-size: 14px;
+  color: #555555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  span {
+    white-space: nowrap;
+  }
+}
+
+.number-of-guests-booked {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #7f7f7f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  span {
+    white-space: nowrap;
+  }
+}
+
+.place-details-wrapper {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100px;
+}
+
+.place-details-column {
+  flex-grow: 1;
+  background-color: white;
+  font-family: Montserrat-Light;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+}
+
+.avatar {
+  background-image: url('../../../static/icons/username_orange.svg');
+  margin-top: 10px;
+  display: inline-block;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.name {
+  font-family: Montserrat-Light;
+  font-size: 13px;
+  color: #555555;
+}
+
+.chef-wrapper {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+.chef-column {
+  background-color: #f6f6f6;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 120px;
+  height: 100px;
+}

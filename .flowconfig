@@ -1,0 +1,33 @@
+[ignore]
+.*/node_modules/.*/node_modules/.*
+.*/node_modules/fbjs
+
+.*/project-june/cli/.*
+.*/node_modules/config-chain
+.*/node_modules/npmconf
+.*/babel-core/lib/.*
+.*/react-codemod/.*
+.*/dist/build/.*
+.*/prettier/tests/.*
+.*/server/build/.*
+.*/node_modules/promise/index.js.flow
+[include]
+
+[libs]
+./flow/interfaces/
+./flow-typed/npm/
+
+[options]
+module.name_mapper='.*\(.less\)' -> 'CSSModule'
+module.name_mapper='.*\(.md$\)' -> 'CSSModule'
+module.system=haste
+
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FixMe
+
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+esproposal.export_star_as=enable
+esproposal.class_instance_fields=enable

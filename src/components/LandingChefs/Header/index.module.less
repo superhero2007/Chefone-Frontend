@@ -1,0 +1,85 @@
+@import (reference) '../share.module.less';
+
+.banner {
+  position: relative;
+  background-image: url('../../../../static/landing-chefs/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position: center;
+  @media @range-to-sm {
+    background-image: url('../../../../static/landing-chefs/mobile/header.jpg');
+  }
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  .banner;
+  width: 100%;
+  height: 430px;
+
+  @media @range-sm {
+    padding-bottom: 100px;
+  }
+  align-items: center;
+}
+
+.head {
+  font-family: Montserrat-Regular;
+  font-size: 38px;
+  line-height: 47px;
+  color: @bright;
+
+  display: flex;
+
+  @media @range-to-sm {
+    text-align: left;
+  }
+
+  @media @range-to-md {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.subhead {
+  .font(24px);
+  line-height: 29px;
+  color: @bright;
+
+  text-align: center;
+  display: flex;
+
+  @media @range-to-md {
+    text-align: left;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  // @media @range-to-sm {
+  // }
+
+  margin-top: 10px;
+}
+
+.begin-button {
+  width: 220px;
+  margin-top: 32px;
+}
+
+.text-block {
+  .align-center;
+  @media (min-width: @screen-md) {
+    width: 720px;
+    margin-top: 92px;
+  }
+  @media @range-sm {
+    margin: 92px 40px 0;
+  }
+  @media @range-to-sm {
+    margin: 52px 20px 0;
+  }
+
+  align-items: center;
+}

@@ -1,0 +1,24 @@
+@import (reference) '../../../../styles/colors';
+
+.amount-counter {
+  margin: 15px auto;
+  max-width: 135px;
+
+  div:nth-child(1),
+  div:nth-child(3) {
+    div {
+      border: 1px solid @brand-gray !important;
+      color: @brand-gray !important;
+    }
+  }
+
+  & > div > div {
+    width: 30px !important;
+    height: 30px !important;
+
+    span {
+      line-height: 30px !important;
+      font-size: 14px !important;
+    }
+  }
+}

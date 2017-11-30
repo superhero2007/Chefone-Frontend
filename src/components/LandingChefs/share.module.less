@@ -1,0 +1,35 @@
+@import (reference) '../../../styles/colors';
+@import (reference) '../../../styles/variables';
+
+@bright: #ffffff;
+@green: #3ec197;
+
+@screen-wide: 1450px;
+
+@range-sm: ~'(min-width: @{screen-sm}) and (max-width: ' (@screen-md - 1) ~') ';
+@range-md: ~'(min-width: @{screen-md}) and (max-width: ' (@screen-lg - 1) ~') ';
+
+@range-to-sm: ~'(max-width:' (@screen-sm - 1) ~') ';
+@range-to-md: ~'(max-width:' (@screen-md - 1) ~') ';
+
+.font(@size: 16px) {
+  font-family: Montserrat-Light;
+  font-size: @size;
+}
+
+.fill(@color, @text: @bright) {
+  color: @text;
+  background-color: @color;
+  border-color: transparent;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.has-border {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(167, 167, 167, 0.2);
+}

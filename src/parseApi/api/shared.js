@@ -1,0 +1,1 @@
+export type ParseClassName = '_User'|'Address'|'Backend'|'Chef'|'Cities'|'Currencies'|'Discount'|'Event'|'Fee'|'FollowersList'|'Food'|'InviteRequest'|'Invoice'|'Jobs'|'JobSection'|'Messages'|'MRO'|'Order'|'Payment'|'PrivateDinnerRequest'|'Reviews'

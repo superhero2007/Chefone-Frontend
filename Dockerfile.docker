@@ -1,0 +1,18 @@
+FROM node:8.2.1-alpine
+
+RUN apk add --update-cache py-pip git openssh-client docker openssl bash  \
+&& pip install docker-compose \
+&& wget -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub \
+&& wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk \
+&& apk add glibc-2.25-r0.apk \
+&& pip install awscli \
+&& pip install awsebcli
+
+COPY ./package.json /app/package.json
+COPY ./package-lock.json /app/package-lock.json
+
+RUN cd app && npm install
+
+COPY . /app
+
+WORKDIR /app

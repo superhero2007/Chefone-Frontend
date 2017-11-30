@@ -1,0 +1,85 @@
+@import (reference) '../share.module.less';
+
+@range-xlg: ~'(min-width: @{screen-xlg})';
+@range-md-xlg: ~'(min-width: @{screen-md}) and (max-width:' (@screen-xlg - 1) ~')';
+
+.component {
+  .align-center;
+
+  margin: 110px 130px 140px;
+
+  @media (min-width: @screen-sm) and (max-width: (@screen-lg - 1)) {
+    margin: 110px 60px 140px;
+  }
+  @media (max-width: (@screen-sm - 1)) {
+    margin: 110px 20px 140px;
+  }
+}
+
+.head {
+  .font(30px);
+  line-height: 37px;
+  color: @text-color;
+}
+
+.blocks {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media @range-xlg {
+    flex-wrap: nowrap;
+  }
+}
+
+@media @range-xlg {
+  .text-block + .text-block {
+    padding-left: 1em;
+  }
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  @media @range-xlg {
+    max-width: 340px;
+  }
+  @media @range-md-xlg {
+    width: 50%;
+    &:nth-child(2n) {
+      padding-left: 1em;
+    }
+    &:nth-child(n + 3) {
+      padding-top: 1em;
+    }
+  }
+  @media @range-to-md {
+    // .text-block {
+    padding-left: 0;
+    & + & {
+      padding-top: 1.5em;
+    }
+    // }
+  }
+}
+
+.number {
+  color: #dd9261;
+  font-size: 65px;
+}
+
+.block-head {
+  font-size: 18px;
+  line-height: 22px;
+  color: @text-color;
+
+  margin-top: 5px;
+}
+
+.text {
+  .font();
+  line-height: 23px;
+  color: @text-color;
+
+  margin-top: 10px;
+}
